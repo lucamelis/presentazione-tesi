@@ -1,0 +1,134 @@
+\documentclass{beamer}
+
+%%% Dichiarazione dei pacchetti standard.
+\usepackage[italian]{babel}
+
+%%% Personalizzazione del layout---articolata su cinque livelli.
+\usetheme{split}        % layout complessivo. 
+\useinnertheme{default} % layout interno.
+\useoutertheme{default} % layout esterno.
+\usecolortheme{default} % schema di colori.
+\usefonttheme{default}  % schema dei font.
+% Inutile dire che se volete tutti i default, potete risparmiarvi gli ultimi
+% quattro comandi. 
+
+%%% Titolo e autore.
+\title{Creare presentazioni in \LaTeX}
+\subtitle{La classe {\tt beamer}}
+\author{Luca Baldini}
+\institute{Gruppo Utilizzatoti Italiani di \TeX}
+\date{\today}
+
+
+
+\begin{document}
+
+\begin{frame}
+  \titlepage
+\end{frame}
+
+
+\section[Sommario]{}
+\begin{frame}
+  \tableofcontents
+\end{frame}
+
+
+\section{Introduzione}
+\begin{frame}
+  \frametitle{Introduzione}
+  \framesubtitle{Il nome del gioco}
+  {\tt beamer} \`e un pacchetto estremamente potente e flessibile per
+  la realizzazzione di presentazioni. Un paio di caratteristiche degne di nota:
+  \begin{itemize}
+  \item D\`a accesso a tutte le funzionalit\`a di base di \LaTeX e pu\`o
+    essere utilizzato insieme a (quasi) tutti gli altri pacchetti.
+    \begin{itemize}
+    \item Supporta il sezionamento.
+    \item Molti dei costrutti pi\`u usuali sono ridefiniti in modo da
+      supportare l'\emph{overlay}.
+    \end{itemize}
+  \item Fornisce strumenti aggiuntivi mirati alle presentazioni (barra di
+    navigazione, dissolvenze, controllo dell'opacit\`a).
+    \begin{itemize}
+    \item Se il tema di \emph{default} vi sembra troppo pesante, non
+      preoccupatevi: avete ampie possibilit\`a di personalizzazione!
+    \end{itemize}
+\end{itemize}
+\end{frame}
+
+
+\section{Una breve panoramica}
+\subsection{Funzionalit\`a di base}
+\begin{frame}
+  \frametitle{Funzionalit\`a di base}
+  \framesubtitle{Elenchi e formule}
+  Si possono inserire banalmente elenchi numerati\ldots
+  \begin{enumerate}
+  \item Punto primo.
+  \item Punto secondo.
+  \item Punto terzo.
+  \end{enumerate}
+
+  \ldots e formule\footnote{A proposito\ldots avete notato l'errore
+    in questa?}:
+  $$
+  \frac{1}{\sqrt{2\pi \sigma}} \int_{-\infty}^{\infty}
+  e^{-\frac{(x-\mu)^2}{2\sigma^2}} = 1
+  $$
+\end{frame}
+
+\subsection{Funzionalit\`a avanzate}
+\begin{frame}
+  \frametitle{Funzionalit\`a avanzate}
+  \framesubtitle{\emph{Overlays}}
+  Come promesso:
+  \begin{itemize}
+  \item<1-> \`E facilissimo\ldots
+  \item<2-> \ldots fare\ldots
+  \item<3-> \ldots \emph{overlays}\/!      
+  \end{itemize}
+
+  \vspace{0.15\textheight}
+
+  \pause[3]
+  \setbeamercolor{uppercolor}{fg=white, bg=black}
+  \setbeamercolor{lowercolor}{fg=white, bg=blue!50!black}
+  \begin{beamerboxesrounded}[upper=uppercolor, lower=lowercolor, shadow=true]
+    {E questo \`e niente!}
+    date un'occhiata alla documentazione per avere un'idea delle sterminate
+    potenzialit\`a che vi vengono offerte.
+  \end{beamerboxesrounded}
+\end{frame}
+
+\subsection{Personalizzazione}
+\begin{frame}[fragile]  % [fragile] \`e necessario per il verbatim!
+  \frametitle{Personalizzazzione}
+  \framesubtitle{Come diavolo faccio a togliere la barra di navigazione?}
+  In fondo non \`e male, ma se proprio volete\ldots avete cinque livelli
+  di personalizzazione accessibili tramite i comandi:
+  \begin{verbatim}
+    \usetheme[opzioni]{nome del tema}
+    \useinnertheme[opzioni]{nome del tema}
+    \useoutertheme[opzioni]{nome del tema}
+    \usecolortheme[opzioni]{nome del tema}
+    \usefonttheme[opzioni]{nome del tema}
+  \end{verbatim}
+
+  Parlando d'altro\ldots se volete usare l'ambiente {\tt verbatim} dovete
+  usare la \emph{keyword} {\tt fragile} all'apertura del \emph{frame}
+  (vedi il sorgente).
+\end{frame}
+
+\section{Conclusioni}
+\begin{frame}
+  \begin{itemize}
+  \item Da provare assolutamente!!!
+  \item E se ancora non vi bastasse\ldots
+    \htmladdnormallink{cliccate qui!}{http://latex-beamer.sourceforge.net/}%
+    \footnote{Questo presuppone che il vostro \emph{viewer} pdf sia
+      configurato opportunamente.}
+  \end{itemize}
+\end{frame}
+
+\end{document}

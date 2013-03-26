@@ -1,15 +1,15 @@
 \documentclass[10pt,compress]{beamer}
 
-\usepackage[italian]{babel}
+\usepackage[english]{babel}
 \usepackage[utf8]{inputenc}
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
 
 % titolo breve
-\title[Implementazione di un protocollo Buyer-Seller]
+\title[On the Learning Parity with Noise Problem]
 % titolo esteso
- {\textbf{Implementazione di un protocollo Buyer-Seller basato su firme di gruppo}}
+ {\textbf{On the Learning Parity with Noise Problem}}
 % logo (alternative: lcispeed, lci, speed o smallspeed)
 \titlegraphic{\lcispeed}
 % autore
@@ -19,9 +19,9 @@
 % universit (breve)
 \institute[Università degli Studi di Firenze]
 % universit (esteso)
- {Università degli Studi di Firenze, Facoltà di Ingegneria}
+ {Università degli Studi di Firenze}
 % corso di laurea
-\newcommand{\cdl}{Corso di Laurea in Ingegneria Informatica}
+\newcommand{\cdl}{Corso di Laurea magistrale in Ingegneria Informatica}
 
 \newcommand{\imp}{\textit}
 
@@ -29,8 +29,8 @@
 \begin{center}
 	\begin{tabular}{cccccccc}
 		{\footnotesize \textbf{Relatori:}} & & & & & & & {\footnotesize \textbf{Co-relatori:}}\\
-		{\footnotesize Prof. Alessandro Piva} & & & & & & & {\footnotesize Ing. Tiziano Bianchi}\\
-		{\footnotesize Prof. Alessandro Piva} & & & & & & & {\footnotesize Ing. Tiziano Bianchi}\\
+		{\footnotesize Prof. Alessandro Piva} & & & & & & & {\footnotesize Dr. Claudio Orlandi}\\
+		{\footnotesize Prof. Fabrizio Argenti} & & & & & & & {\footnotesize Ivan Damg{\aa}rd}
 	\end{tabular}
 \end{center}
 }
@@ -71,14 +71,14 @@
 
 \newcommand{\bgunifi}{
  \begin{minipage}{\paperwidth}
-  \centering\vspace{0.32\paperheight}
+  \centering\vspace{0.12\paperheight}
   \pgfuseimage{salomone}
   \insertrelatore
  \end{minipage}
 }
 
-\pgfdeclareimage[height=3cm]{salomone}{img/salomone}
-\pgfdeclareimage[height=1.2cm]{logo}{img/lci.det}
+\pgfdeclareimage[height=6cm]{salomone}{img/stemma}
+\pgfdeclareimage[height=2.0cm]{logo}{img/aarhus_logo}
 %\pgfdeclareimage[height=1.2cm]{speed}{img/sspeed}
 %\pgfdeclareimage[width=3cm]{smallspeed}{img/sspeed}
 \newcommand{\lcispeed}{\vskip16pt\pgfuseimage{logo}}%\hskip16pt\pgfuseimage{speed}}
@@ -99,10 +99,10 @@
 \setbeamerfont{alerted text}{size=\small}
 \setbeamercolor{alerted text}{fg=red}
 \setbeamercolor{structure}{fg=blue!50}
-\setbeamercolor{palette primary}{fg=black,bg=blue!20}
-\setbeamercolor{palette secondary}{fg=black,bg=blue!25}
-\setbeamercolor{palette tertiary}{fg=black,bg=blue!30}
-\setbeamercolor{palette quaternary}{fg=black,bg=blue!35}
+\setbeamercolor{palette primary}{fg=black,bg=blue!35}
+\setbeamercolor{palette secondary}{fg=black,bg=blue!40}
+\setbeamercolor{palette tertiary}{fg=black,bg=blue!45}
+\setbeamercolor{palette quaternary}{fg=black,bg=blue!50}
 \setbeamercolor{item projected}{fg=black,bg=blue!20}
 \setbeamerfont{block title}{size=\normalsize}
 \setbeamercolor{block title}{fg=black,bg=blue!20}
@@ -121,7 +121,6 @@
 \include{images}
 
 \begin{document}
-
 {
 \setbeamertemplate{headline}{\titleheadline}
 \setbeamertemplate{footline}{\titlefootline}
@@ -130,7 +129,10 @@
 \begin{frame}
 \titlepage
 \end{frame}
+
 }
+
+
 
 %{
 %\setbeamercolor{structure}{fg=black}

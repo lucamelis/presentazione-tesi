@@ -10,6 +10,150 @@
    \end{block}
 \end{frame}
 
-\section{$\LPN$ problem}
+\section{Learning Parity with Noise Problem $\LPN$}
 
-\section{$$}
+\begin{frame}
+\frametitle{Learning Parity with Noise Problem $\LPN$}
+\begin{itemize}
+ \item Dimension $\ell$ (security parameter)
+ \item \textbf{Search}: \underline{find}  $\in \zol$ given ``noisy random inner products'' \\
+ \begin{overprint}
+ \onslide<1>
+ \begin{align*}
+  \vect{a_1} \gets \zol \quad , \quad b_1 &= <\vect{a_1} \: , \: \vect{s}> \: \xor \: e_1 \\
+  \vect{a_2} \gets \zol \quad, \quad  b_2 &= <\vect{a_2} \: , \: \vect{s}> \: \xor \: e_2 \\
+   & \vdots \\
+  \end{align*}
+  Errors $e_i \gets \chi =$ Bernoulli, param $\tau \in \left[ 0,\frac{1}{2} \right] $ 
+
+  \onslide<2>
+\begin{equation*}
+\vect{A} = \begin{pmatrix}
+            & \vect{a_1} & \\
+            & \vdots  &\\ 
+            & \vect{a_q} & 
+           \end{pmatrix} , \vect{b} = \vect{A} \cdot \vect{s} \xor \vect{e} \\
+ 
+ 
+\end{equation*}
+
+ \end{overprint}
+
+Errors $e_i \gets \chi =$ Bernoulli, param $\tau \in \left[ 0,\frac{1}{2} \right] $ 
+ \item \textbf{Decision}: \underline{distinguish} $\left( \vect{a_i}, b_i \right)$ from uniform $\left( \vect{a_i}, b_i \right)$
+ \end{itemize}
+
+\end{frame}
+
+
+\section{Threshold Public-Key Encryption}
+\begin{frame}
+\begin{block}{Protocol phases: }
+\begin{itemize}
+ \item \textbf{Key Generation} 
+ \item \textbf{Key Assembly} 
+ \item \textbf{Encryption} 
+ \item \textbf{Partial Decryption} 
+ \item \textbf{Finish Decryption} 
+ \end{itemize} 
+\end{block} 
+\end{frame}
+
+\begin{frame}
+\frametitle{Encryption}
+
+\only<2>{
+\begin{figure}
+\begin{mdframed}
+ 
+\begin{protocol}{2}
+    %\protocolheader{Encryption Phase}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receivers \underline{$\mathtt{R_i},\mathtt{R_j}$ }} \\
+     \left( \vect{C_1},\vect{c_2} \right) \gets \mathtt{ThLPN.Enc}(m,\vect{b}) & \phantom{\sends{(\vect{C_1},\vect{c_2})} }\\    
+  \end{protocol} 
+\end{mdframed} 
+\end{figure}
+}
+
+\only<3>{
+\begin{figure}
+\begin{mdframed}
+\begin{protocol}{2}
+    %\protocolheader{Encryption Phase}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receivers \underline{$\mathtt{R_i},\mathtt{R_j}$ }} \\
+     \left( \vect{C_1},\vect{c_2} \right) \gets \mathtt{ThLPN.Enc}(m,\vect{b}) &  \sends{(\vect{C_1},\vect{c_2})}   \\    
+  \end{protocol}
+ 
+\end{mdframed}
+ 
+\end{figure}
+}
+\end{frame}
+
+\begin{frame}
+\frametitle{Partial Decryption}	
+\only<1>{
+\begin{figure}
+  \begin{mdframed} 
+    \begin{protocol}{2}
+      % \protocolheader{Partial Decryption Phase}\\
+      \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
+      \vect{d_i} \gets \mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_i})  & \phantom{\sends{\vect{d_i}}}   \\
+      & \phantom{\receives{\vect{d_j}}} & \phantom{\vect{d_j} \gets} \\ 
+      & & \phantom{\mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_j})} \\
+    \end{protocol}
+  \end{mdframed}
+\end{figure}
+}
+
+\only<2>{
+\begin{figure}
+  \begin{mdframed}
+    \begin{protocol}{2}
+      % \protocolheader{Partial Decryption Phase}\\
+      \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
+      \vect{d_i} \gets \mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_i})  & \sends{\vect{d_i}}   \\
+      & \phantom{\receives{\vect{d_j}}} & \phantom{\vect{d_j} \gets} \\ 
+      & & \phantom{\mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_j})} \\
+    \end{protocol}
+  \end{mdframed}
+\end{figure}
+}
+
+\only<3>{
+\begin{figure}
+  \begin{mdframed}
+    \begin{center}
+    
+    \end{center}
+    \begin{protocol}{2}
+      % \protocolheader{Partial Decryption Phase}\\
+      \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
+      \vect{d_i} \gets \mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_i})  & \sends{\vect{d_i}}   \\
+      & \phantom{\receives{\vect{d_j}}} & \vect{d_j} \gets \\ 
+      & & \mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_j}) \\
+    \end{protocol}
+  \end{mdframed}
+\end{figure}
+}
+
+\only<4>{
+\begin{figure}
+  \begin{mdframed}
+    \begin{protocol}{2}
+      % \protocolheader{Partial Decryption Phase}\\
+      \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
+      \vect{d_i} \gets \mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_i})  & \sends{\vect{d_i}}   \\
+      & \receives{\vect{d_j}} & \vect{d_j} \gets \\ 
+      & & \mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_j}) \\
+    \end{protocol}
+  \end{mdframed}
+\end{figure}
+}
+\end{frame}
+
+\begin{frame}
+ 
+\end{frame}
+
+

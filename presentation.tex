@@ -5,6 +5,38 @@
 \usepackage[T1]{fontenc}
 \usepackage{lmodern}
 
+\usepackage[framemethod=TikZ,roundcorner=10pt]{mdframed}
+\usepackage{protocolj}
+\usepackage{xparse}
+\usepackage{pstricks}
+\usepackage{amsthm}
+\usepackage{amsmath}          % Non necessario se usi TPTESI2 perche' gia` incluso
+\usepackage{amssymb}
+\usepackage{amsfonts}
+%\usepackage{graphicx}  % Non necessario se usi TPTESI2 perche' gia` incluso
+
+\newcommand*\xor{\mathbin{\oplus}}
+
+\newcommand{\numberset}{\mathbb}
+\newcommand{\N}{\numberset{N}}
+
+\newcommand{\LPN}{\mathrm{LPN}}
+\newcommand{\xlpn}{\mathrm{xLPN}}
+
+\newcommand{\Z}{\numberset{Z}_2}
+\newcommand{\zo}{\Z}
+\newcommand{\R}{\xleftarrow{R}}
+\newcommand{\wt}{\operatorname{wt}}
+\newcommand{\Ber}{\mathrm{Ber}}
+\newcommand{\Bino}{\mathrm{Bin}}
+
+
+\newcommand{\zok}{\zo^k}
+\newcommand{\zol}{\zo^{\ell}}
+
+\newcommand{\vect}[1]{\boldsymbol{#1}}
+\newcommand{\bigo}[1]{\mathcal{O}({#1})}
+\newcommand{\set}[1]{\mathit{#1}}
 
 % titolo breve
 \title[On the Learning Parity with Noise Problem]
@@ -30,7 +62,7 @@
 	\begin{tabular}{cccccccc}
 		{\footnotesize \textbf{Advisors:}} & & & & & & & {\footnotesize \textbf{Co-advisors:}}\\
 		{\footnotesize Prof. Alessandro Piva} & & & & & & & {\footnotesize Dr. Claudio Orlandi}\\
-		{\footnotesize Prof. Fabrizio Argenti} & & & & & & & {\footnotesize Ivan Damg{\aa}rd}
+		{\footnotesize Prof. Fabrizio Argenti} & & & & & & & {\footnotesize Prof. Ivan Damg{\aa}rd}
 	\end{tabular}
 \end{center}
 }
@@ -88,7 +120,7 @@
 
 \usecolortheme{default}
 \usefonttheme{serif}
-\useinnertheme{rectangles}
+\useinnertheme{circles}
 \useoutertheme{infolines}
 
 \setbeamercovered{dynamic}

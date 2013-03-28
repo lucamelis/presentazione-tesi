@@ -16,31 +16,28 @@
 \frametitle{Learning Parity with Noise Problem $\LPN$}
 \begin{itemize}
  \item Dimension $\ell$ (security parameter)
- \item \textbf{Search}: \underline{find}  $\in \zol$ given ``noisy random inner products'' \\
+ \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
  \begin{overprint}
  \onslide<1>
  \begin{align*}
-  \vect{a_1} \gets \zol \quad , \quad b_1 &= <\vect{a_1} \: , \: \vect{s}> \: \xor \: e_1 \\
-  \vect{a_2} \gets \zol \quad, \quad  b_2 &= <\vect{a_2} \: , \: \vect{s}> \: \xor \: e_2 \\
+  {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\
+  {\color{blue}{\vect{a_2}}} \R \zol \quad, \quad  {\color{red}{b_2}} &= <{\color{blue}{\vect{a_2}}} \: , \: \vect{s}> \: \xor \: e_2 \\
    & \vdots \\
+   {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
   \end{align*}
-  Errors $e_i \gets \chi =$ Bernoulli, param $\tau \in \left[ 0,\frac{1}{2} \right] $ 
 
   \onslide<2>
-\begin{equation*}
-\vect{A} = \begin{pmatrix}
-            & \vect{a_1} & \\
-            & \vdots  &\\ 
-            & \vect{a_q} & 
-           \end{pmatrix} , \vect{b} = \vect{A} \cdot \vect{s} \xor \vect{e} \\
- 
- 
-\end{equation*}
-
+  \\ \ \\
+\[
+{\color{blue} \vect{A}} = \begin{pmatrix}
+            & {\color{blue}\vect{a_1}} & \\
+            & \vdots  & \\ 
+            & {\color{blue}\vect{a_q}} & 
+           \end{pmatrix}  , {\color{red} \vect{b}} = {\color{blue} \vect{A}} \cdot \vect{s} \xor \vect{e} 
+\]
  \end{overprint}
-
-Errors $e_i \gets \chi =$ Bernoulli, param $\tau \in \left[ 0,\frac{1}{2} \right] $ 
- \item \textbf{Decision}: \underline{distinguish} $\left( \vect{a_i}, b_i \right)$ from uniform $\left( \vect{a_i}, b_i \right)$
+  Errors $e_i \gets \chi =$ Bernoulli over $\Z$, param $\tau \in \left[ 0,\frac{1}{2} \right] $ 
+ \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$
  \end{itemize}
 
 \end{frame}
@@ -156,4 +153,4 @@ Errors $e_i \gets \chi =$ Bernoulli, param $\tau \in \left[ 0,\frac{1}{2} \right
  
 \end{frame}
 
-
+\section{Commitment P}

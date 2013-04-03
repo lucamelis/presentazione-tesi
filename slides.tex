@@ -44,6 +44,42 @@
 
 \section{Threshold Public-Key Encryption}
 \begin{frame}
+\frametitle{Alekhnovich Public Key Encryption scheme}
+
+\begin{block}{\textbf{Key Generation}}
+ The sender $\mathtt{S}$ chooses
+ \begin{itemize}
+  \item a secret key $\vect{s} \R \zol$
+  \item $\vect{A} \R \Z^{q \times \ell}$ and the error $\vect{e} \gets \Ber_{\tau}^{q}$ \\
+  to compute the public key $\left( \vect{A},\vect{b}= \vect{A}\vect{s} \xor \vect{e} \right)$
+ \end{itemize}
+\end{block}
+%   \begin{figure}  
+%     \begin{protocol}{2}
+%       \protocolheader{\textbf{Key Generation}}\\
+%       \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
+%       &	\hspace*{3cm} & \mbox{Choose a secret key $\vect{s} \R \zol$ }\\
+%       & \quad & \mbox{choose a matrix $\vect{A} \R \Z^{q \times \ell}$}\\
+%       & \quad & \mbox{and an error vector $\vect{e} \gets \Ber_{\tau}^{q}$} \\
+%     \end{protocol}
+%  \end{figure}
+
+  \begin{figure}
+    \begin{protocol}{2}
+      \protocolheader{\textbf{Encryption} of a message bit $m \in \Z$}\\
+      \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
+      \mbox{choose a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
+      \mbox{compute $\vect{u}= \vect{f} \cdot \vect{A} $ } & & \\
+      \mbox{ $c= \left\langle \vect{f},\vect{b} \right\rangle \xor m$} & \sends{( \vect{u}, c ) } \\
+    \end{protocol}
+ \end{figure}
+
+ \begin{block}{\textbf{Decryption}}
+ The receiver $\mathtt{R}$ computes $d = c \xor \left\langle \vect{s},\vect{u} \right\rangle $
+\end{block}
+\end{frame}
+
+\begin{frame}
 \begin{block}{Protocol phases: }
 \begin{itemize}
  \item<1-> \alert<1,1>{ \textbf{Key Generation} }

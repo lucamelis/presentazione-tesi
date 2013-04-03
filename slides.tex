@@ -27,7 +27,7 @@
   \end{align*}
 
   \onslide<2>
-  \\ \ \\
+  \vspace*{25pt}
 \[
 {\color{blue} \vect{A}} = \begin{pmatrix}
             & {\color{blue}\vect{a_1}} & \\
@@ -36,10 +36,9 @@
            \end{pmatrix}  , {\color{red} \vect{b}} = {\color{blue} \vect{A}} \cdot \vect{s} \xor \vect{e} 
 \]
  \end{overprint}
-  Errors $e_i \gets \chi =$ Bernoulli over $\Z$, param $\tau \in \left[ 0,\frac{1}{2} \right] $ 
+  Errors $e_i \gets \chi =$ Bernoulli over $\Z$, param $\tau \in \left( 0,\frac{1}{2} \right] $ 
  \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$
  \end{itemize}
-
 \end{frame}
 
 
@@ -47,13 +46,21 @@
 \begin{frame}
 \begin{block}{Protocol phases: }
 \begin{itemize}
- \item \textbf{Key Generation} 
- \item \textbf{Key Assembly} 
- \item \textbf{Encryption} 
- \item \textbf{Partial Decryption} 
- \item \textbf{Finish Decryption} 
+ \item<1-> \alert<1,1>{ \textbf{Key Generation} }
+ \item<2-> \alert<2,2>{ \textbf{Key Assembly} }
+ \item<3-> \alert<3,3>{ \textbf{Encryption} }
+ \item<4-> \alert<4,4>{ \textbf{Partial Decryption} } 
+ \item<5-> \alert<5,5>{ \textbf{Finish Decryption} }
  \end{itemize} 
-\end{block} 
+\end{block}
+\begin{overprint}
+ \onslide<1> \begin{center}\pgfuseimage{key_gen}\end{center}
+ \onslide<2> \begin{center}\pgfuseimage{key_assembly}\end{center}
+ \onslide<3> \begin{center}\pgfuseimage{enc}\end{center}
+ \onslide<4> \begin{center}\pgfuseimage{part_dec}\end{center}
+ \onslide<5> \begin{center}\pgfuseimage{finish}\end{center}
+\end{overprint}
+
 \end{frame}
 
 \begin{frame}
@@ -88,7 +95,8 @@
 \end{frame}
 
 \begin{frame}
-\frametitle{Partial Decryption}	
+\frametitle{Partial Decryption}
+
 \only<1>{
 \begin{figure}
   \begin{mdframed} 
@@ -150,7 +158,8 @@
 \end{frame}
 
 \begin{frame}
- 
+ \begin{center}\pgfuseimage{adversary}\end{center}
+
 \end{frame}
 
 \section{Commitment P}

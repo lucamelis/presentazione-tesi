@@ -1,5 +1,4 @@
 \section{Introduzione}
-
 \begin{frame}
  \frametitle{Scenario}
  \begin{block}{Cryptography schemes}
@@ -11,66 +10,32 @@
  
  \begin{block}{Near Future:}
  \begin{itemize}
-    \item \alert{Problem:} What if someone constructs large quantum computers?
-    \item Cryptography world may fall apart:
-    \begin{enumerate}
-     \item cryptographic assumptions broken by efficient quantum algorithms
-     \item proof of security becomes invalid 
-    \end{enumerate}
+    \item \alert{Problem:} What if someone constructs a large quantum computers?
  \end{itemize}
-\end{block}
 
-\end{frame}
-
-\begin{frame}
-\frametitle{Post-Quantum cryptography}
- Schemes that are believed to resist classical computers and quantum computers
-      \begin{itemize}
-      \item \textbf{Hash-based cryptography}
-      \item \textbf{Code-based cryptography}
-      \item \textbf{Lattice-based cryptography}
-      \end{itemize}
- \begin{block}{Some Issues:}
-  \begin{itemize}
- \item \textbf{Efficiency} 
- \item \textbf{Confidence}
- \item \textbf{Usability}
-\end{itemize}
+ 
  \end{block}
-\begin{block}{Our contribution}
- \begin{itemize}
-  \item We investigate about the Learning Parity with Noise $\LPN$ Problem
-  \item We propose a \emph{Threshold Public-Key Encryption} scheme based on $\LPN$
-  \item We propose a \emph{Commitment protocol} based on $\LPN$
- \end{itemize}
 
-\end{block}
 
 \end{frame}
-
 
 \section{Learning Parity with Noise Problem $\LPN$}
 
 \begin{frame}
 \frametitle{Learning Parity with Noise Problem $\LPN$}
 \begin{itemize}
- \item Dimension $\ell$ (security parameter), $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right]$
+ \item Dimension $\ell$ (security parameter), $q \gg \ell$
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
  \begin{overprint}
  \onslide<1>
  \begin{align*}
-  {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\  
-  \end{align*}
-
-  \onslide<2>
-  \begin{align*}
   {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\
   {\color{blue}{\vect{a_2}}} \R \zol \quad, \quad  {\color{red}{b_2}} &= <{\color{blue}{\vect{a_2}}} \: , \: \vect{s}> \: \xor \: e_2 \\
    & \vdots \\
    {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
   \end{align*}
 
-  \onslide<3>
+  \onslide<2>
   \vspace*{25pt}
 \[
 {\color{blue} \vect{A}} = \begin{pmatrix}
@@ -80,16 +45,14 @@
            \end{pmatrix}  , {\color{red} \vect{b}} = {\color{blue} \vect{A}} \cdot \vect{s} \xor \vect{e} 
 \]
  \end{overprint}
-  Errors $e_i \gets \Ber_{\tau}$, i.e. $\Pr(e_i=1)= \tau$
+  Errors $e_i \gets \chi =$ Bernoulli over $\Z$, param $\tau \in \left( 0,\frac{1}{2} \right] $ 
  \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$
- \item $\LPN$ becomes trivial with $\tau=0$ (Gaussian elimination)
  \item decisional and search $\LPN$ are \emph{``polinomially equivalent''} \\ 
  \end{itemize}
 \end{frame}
 
 \begin{frame}
  \frametitle{Learning Parity with Noise Problem $\LPN$}
-
 
   \begin{block}{$\LPN$ variants}
     \begin{itemize}
@@ -109,12 +72,6 @@
 
   \end{block}
 
-  \begin{block}{Interesting features}
-    \begin{itemize}
-      \item Efficiency $\Rightarrow$ suitable for limited computing power devices (e.g. RFID).
-      \item quantum algorithm resistance
-    \end{itemize}
-  \end{block}
 
 \end{frame}
 
@@ -156,8 +113,7 @@
  The sender $\mathtt{S}$ chooses
  \begin{itemize}
   \item a secret key $\vect{s} \R \zol$
-  \item $\vect{A} \R \Z^{q \times \ell}$ and the error $\vect{e} \gets \Ber_{\tau}^{q}$, where $ \tau \in \Theta(\frac{1}{\sqrt{\ell}}) $ \\
-  and computes the \emph{pk} as $\left( \vect{A},\vect{b}= \vect{A}\vect{s} \xor \vect{e} \right)$
+  \item $\vect{A} \R \Z^{q \times \ell}$ and the error $\vect{e} \gets \Ber_{\tau}^{q}$ and computes the \emph{pk} as $\left( \vect{A},\vect{b}= \vect{A}\vect{s} \xor \vect{e} \right)$
  \end{itemize}
 \end{block}
 %   \begin{figure}  
@@ -495,20 +451,7 @@ Our commitment scheme is statistically binding and computationally hiding
   \item we assume that $\mathcal{A}$ is able to break the commitment scheme
   \begin{center}\pgfuseimage{adversary}\end{center}
   \item Let $\mathcal{B}$ an oracle 
-  \begin{columns}[c]
-    \column{0.50\textwidth}
-   \begin{center}
-    \pgfuseimage{oracle}
-   \end{center}
-
-     \column{0.50\textwidth}
-where $\vect{b} = \begin{cases}
-		      \mbox{random} & w.p. \: 1/2 \\
-		      \vect{A'}\vect{s} \xor \vect{e} & w.p. \: 1/2
-                  \end{cases}$
-  \end{columns}
-
-  \begin{center} \hspace{1.5cm} 
+  \begin{center}\pgfuseimage{oracle} \hspace{1.5cm} where $\vect{b}$ is uniformly random w.p. $\frac{1}{2}$
 \end{center}
  \end{itemize}
 
@@ -531,14 +474,14 @@ where $\vect{b} = \begin{cases}
  \onslide<5>
 \begin{block}{case $1)$  }
 $\vect{b}$ is random $\Rightarrow$ $\vect{c} = \vect{b} \xor \vect{A''}m$ is a \alert{onetime-pad} encryption\\
-$\Rightarrow$ $\mathcal{A}$ guesses w.p. $\frac{1}{2}$\\
-\centering Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment
+$\Rightarrow$ $\mathcal{A}$ is right w.p. $\frac{1}{2}$\\
+\begin{center} Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment \end{center}
 \end{block}
 
 \onslide<6>
 \begin{block}{case $2)$  }
 $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed commitment\\
-\centering $\Rightarrow$ $\mathcal{A}$ guesses w.p. $1$ (by hypothesis)\\
+$\Rightarrow$ $\mathcal{A}$ is right w.p. $1$\\
 \end{block}
 
 \onslide<7>
@@ -546,32 +489,9 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
 Let \mbox{E = {the reduction breaks the Exact-$\LPN$ problem}},  
  \begin{align*}
   \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
-	 &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} \geq \mathtt{negl}(k)
+	 &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4}
 \end{align*}
 \end{block}
 \end{overprint}
-
-\end{frame}
-
-\begin{frame}
- \frametitle{Conclusions and Open Problems}
- 
- \begin{block}{$\LPN$ open problems}
-  \begin{itemize}
-   \item relation between standard $\LPN$ and some variants
-   \item $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? Is there a threshold?
-   \item how to get some basic primitives from standard $\LPN$?
-  \end{itemize}
-
- \end{block}
- 
- \begin{block}{Our contribution}
-\begin{itemize}
- \item study the security of our Threshold Public-Key Encryption scheme in the \emph{malicious model}
- \item find statistically hiding commitments
- \item find efficient statistically binding commitments
-\end{itemize}
-  
- \end{block}
 
 \end{frame}

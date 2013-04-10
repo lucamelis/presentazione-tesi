@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.3.26)  9 APR 2013 07:08
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.3.26)  10 APR 2013 06:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1401,21 +1401,21 @@ Package: beamerouterthemeinfolines 2010/07/10  (rcs-revision 445340293dde)
 (./images.tex) (./presentation.aux (./slides.aux))
 \openout1 = `presentation.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 156.
-LaTeX Font Info:    ... okay on input line 156.
-LaTeX Font Info:    Try loading font information for T1+lmr on input line 156.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 157.
+LaTeX Font Info:    ... okay on input line 157.
+LaTeX Font Info:    Try loading font information for T1+lmr on input line 157.
 
 (/usr/share/texmf/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
@@ -1484,7 +1484,7 @@ e
 ))
 ABD: EveryShipout initializing macros
 \AtBeginShipoutBox=\box71
-Package hyperref Info: Link coloring OFF on input line 156.
+Package hyperref Info: Link coloring OFF on input line 157.
 
 (/usr/share/texmf/tex/latex/hyperref/nameref.sty
 Package: nameref 2010/04/30 v2.40 Cross-referencing by name of section
@@ -1494,9 +1494,9 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count350
 )
-LaTeX Info: Redefining \ref on input line 156.
-LaTeX Info: Redefining \pageref on input line 156.
-LaTeX Info: Redefining \nameref on input line 156.
+LaTeX Info: Redefining \ref on input line 157.
+LaTeX Info: Redefining \pageref on input line 157.
+LaTeX Info: Redefining \nameref on input line 157.
  (./presentation.out) (./presentation.out)
 \@outlinefile=\write5
 \openout5 = `presentation.out'.
@@ -1504,41 +1504,41 @@ LaTeX Info: Redefining \nameref on input line 156.
 \symnumbers=\mathgroup6
 \sympureletters=\mathgroup7
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `normal'
-(Font)                  OT1/lmr/m/n --> T1/lmr/m/n on input line 156.
-LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 156.
+(Font)                  OT1/lmr/m/n --> T1/lmr/m/n on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 156.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 156.
-LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 156.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
-(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 156.
+(Font)                  OT1/lmss/m/n --> T1/lmss/m/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 156.
-LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 156.
+(Font)                  OT1/lmss/bx/n --> T1/lmss/m/n on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
-(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 156.
+(Font)                  OT1/lmr/m/it --> T1/lmr/m/it on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 156.
-LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 156.
+(Font)                  OT1/lmr/bx/it --> T1/lmr/m/it on input line 157.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 156.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 156.
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 157.
 LaTeX Font Info:    Overwriting symbol font `numbers' in version `bold'
-(Font)                  T1/lmr/m/n --> T1/lmr/bx/n on input line 156.
+(Font)                  T1/lmr/m/n --> T1/lmr/bx/n on input line 157.
 LaTeX Font Info:    Overwriting symbol font `pureletters' in version `bold'
-(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 156.
+(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathrm' in version `bold'
-(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 156.
+(Font)                  OT1/lmr/bx/n --> T1/lmr/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
-(Font)                  T1/lmr/bx/n --> T1/lmr/bx/n on input line 156.
+(Font)                  T1/lmr/bx/n --> T1/lmr/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
-(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 156.
+(Font)                  T1/lmss/m/n --> T1/lmss/bx/n on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
-(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 156.
+(Font)                  T1/lmr/m/it --> T1/lmr/bx/it on input line 157.
 LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
-(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 156.
+(Font)                  T1/lmtt/m/n --> T1/lmtt/bx/n on input line 157.
 
 (/usr/share/texmf/tex/latex/beamer/translator/dicts/translator-basic-dictionary
 /translator-basic-dictionary-English.dict
@@ -1564,44 +1564,44 @@ Dictionary: translator-numbers-dictionary, Language: English
 ry/translator-theorem-dictionary-English.dict
 Dictionary: translator-theorem-dictionary, Language: English 
 )
-LaTeX Info: Redefining \includegraphics on input line 156.
+LaTeX Info: Redefining \includegraphics on input line 157.
  (./presentation.nav)
-LaTeX Font Info:    Try loading font information for OT1+lmr on input line 164.
+LaTeX Font Info:    Try loading font information for OT1+lmr on input line 165.
 
 
 (/usr/share/texmf/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OML+lmm on input line 164.
+LaTeX Font Info:    Try loading font information for OML+lmm on input line 165.
 
 
 (/usr/share/texmf/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 164
+LaTeX Font Info:    Try loading font information for OMS+lmsy on input line 165
 .
 
 (/usr/share/texmf/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-LaTeX Font Info:    Try loading font information for OMX+lmex on input line 164
+LaTeX Font Info:    Try loading font information for OMX+lmex on input line 165
 .
 
 (/usr/share/texmf/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 164.
+(Font)              <10> on input line 165.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 164.
+(Font)              <7> on input line 165.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 164.
-LaTeX Font Info:    Try loading font information for U+msa on input line 164.
+(Font)              <5> on input line 165.
+LaTeX Font Info:    Try loading font information for U+msa on input line 165.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2009/06/22 v3.00 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 164.
+LaTeX Font Info:    Try loading font information for U+msb on input line 165.
 
 (/usr/share/texmf/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2009/06/22 v3.00 AMS symbols B
@@ -1654,13 +1654,17 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [6
 
+] [7
+
+] [8
+
 ]
 Overfull \vbox (0.62218pt too high) detected at line 119
  []
 
-[7
+[9
 
-] [8
+] [10
 
 ]
 LaTeX Font Info:    Try loading font information for T1+lmtt on input line 187.
@@ -1671,47 +1675,19 @@ File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 Overfull \vbox (1.0375pt too high) detected at line 187
  []
 
-[9
+[11
 
-] [10
+] [12
 
- <./images/key_gen.png>] [11
+ <./images/key_gen.png>] [13
 
- <./images/key_assembly.png>] [12
+ <./images/key_assembly.png>] [14
 
- <./images/enc.png>] [13
+ <./images/enc.png>] [15
 
- <./images/part_dec.png>] [14
+ <./images/part_dec.png>] [16
 
- <./images/finish.png>] [15
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 265.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 265.
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 265.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 265.
-[16
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 265.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 265.
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 265.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 265.
-[17
+ <./images/finish.png>] [17
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
@@ -1730,29 +1706,29 @@ Package mdframed Info: mdframed inside a box
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
-(mdframed)              on input line 355.
+(mdframed)              on input line 265.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+LaTeX Font Warning: Command \small invalid in math mode on input line 265.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
+ mdframed uses option nobreak mdframed on input line 265.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
+ mdframed uses option nobreak mdframed on input line 265.
 [19
 
 ]
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
-(mdframed)              on input line 355.
+(mdframed)              on input line 265.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+LaTeX Font Warning: Command \small invalid in math mode on input line 265.
 
 Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
+ mdframed uses option nobreak mdframed on input line 265.
 Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
+ mdframed uses option nobreak mdframed on input line 265.
 [20
 
 ]
@@ -1777,9 +1753,6 @@ Package mdframed Info: mdframed detected package amsthm
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 355.
 
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
-
 Package mdframed Info: mdframed inside float 
  mdframed uses option nobreak mdframed on input line 355.
 Package mdframed Info: mdframed inside a box 
@@ -1790,9 +1763,6 @@ Package mdframed Info: mdframed inside a box
 Package mdframed Info: mdframed detected package amsthm 
  changed the theoerem header of amsthm
 (mdframed)              on input line 355.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
 
 
 LaTeX Font Warning: Command \small invalid in math mode on input line 355.
@@ -1820,209 +1790,140 @@ Package mdframed Info: mdframed inside a box
  mdframed uses option nobreak mdframed on input line 355.
 [24
 
-] [25
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theoerem header of amsthm
+(mdframed)              on input line 355.
 
-] [26
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 355.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 355.
+[25
+
+]
+Package mdframed Info: mdframed detected package amsthm 
+ changed the theoerem header of amsthm
+(mdframed)              on input line 355.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+
+Package mdframed Info: mdframed inside float 
+ mdframed uses option nobreak mdframed on input line 355.
+Package mdframed Info: mdframed inside a box 
+ mdframed uses option nobreak mdframed on input line 355.
+[26
 
 ] [27
+
+] [28
+
+] [29
 
 ]
 Overfull \vbox (5.0156pt too high) detected at line 461
  []
 
-[28
-
-] [29
-
-]
-Overfull \vbox (12.92165pt too high) detected at line 517
- []
-
 [30
 
- <./images/adv.png> <./images/oracle.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
+] [31
 
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 554--554
-[]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \vbox (3.12006pt too high) detected at line 554
- []
-
-[31
-
- <./images/proof_0.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 554--554
-[]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \vbox (3.12006pt too high) detected at line 554
+]
+Overfull \vbox (11.17165pt too high) detected at line 517
  []
 
 [32
 
- <./images/proof_1.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+ <./images/adv.png> <./images/oracle.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 554--554
-[]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \vbox (3.12006pt too high) detected at line 554
  []
 
 [33
 
- <./images/proof_2.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+ <./images/proof_0.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 554--554
-[]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \vbox (3.12006pt too high) detected at line 554
  []
 
 [34
 
- <./images/proof_3.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+ <./images/proof_1.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 554--554
-[]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \vbox (3.12006pt too high) detected at line 554
  []
 
 [35
 
- <./images/proof_4.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+ <./images/proof_2.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 554--554
-[]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \vbox (3.12006pt too high) detected at line 554
  []
 
 [36
 
- <./images/proof_5.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+ <./images/proof_3.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
 [][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 554--554
-[]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 554--554
-[][]  
- []
-
-
-Overfull \vbox (3.12006pt too high) detected at line 554
  []
 
 [37
 
-] [38
+ <./images/proof_4.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+[][]  
+ []
+
+[38
+
+ <./images/proof_5.png>]
+Overfull \hbox (9.6996pt too wide) in paragraph at lines 565--565
+[]  
+ []
+
+[39
+
+ <./images/proof_3.png>] [40
 
 ])
 \tf@nav=\write6
@@ -2034,20 +1935,20 @@ Overfull \vbox (3.12006pt too high) detected at line 554
 \tf@snm=\write8
 \openout8 = `presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 179.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 179.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 180.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 180.
  (./presentation.aux (./slides.aux))
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 179.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 179.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 180.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 180.
 Package rerunfilecheck Info: File `presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 0B1CC83E76CB0FE561B9F11F0FE5845F;240.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 179.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 26097 strings out of 493607
- 471150 string characters out of 3149945
- 607920 words of memory out of 3500000
- 28658 multiletter control sequences out of 15000+200000
+ 26099 strings out of 493607
+ 471053 string characters out of 3149945
+ 605883 words of memory out of 3500000
+ 28656 multiletter control sequences out of 15000+200000
  140411 words of font info for 93 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  56i,23n,77p,953b,1023s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -2076,10 +1977,10 @@ m/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (38 pages, 1001295 bytes).
+Output written on presentation.pdf (40 pages, 1001998 bytes).
 PDF statistics:
- 1221 PDF objects out of 1440 (max. 8388607)
- 1113 compressed objects within 12 object streams
- 81 named destinations out of 1000 (max. 500000)
- 155 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 467 PDF objects out of 1000 (max. 8388607)
+ 364 compressed objects within 4 object streams
+ 85 named destinations out of 1000 (max. 500000)
+ 160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

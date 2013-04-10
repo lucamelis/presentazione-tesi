@@ -32,9 +32,9 @@
       \end{itemize}
  \begin{block}{Some Issues:}
   \begin{itemize}
- \item \textbf{Efficiency} 
- \item \textbf{Confidence}
- \item \textbf{Usability}
+ \item \textbf{Efficiency} time and space 
+ \item \textbf{Confidence} cryptanalysts experience 
+ \item \textbf{Usability} infrastructure
 \end{itemize}
  \end{block}
 \begin{block}{Our contribution}
@@ -53,16 +53,16 @@
 
 \begin{frame}
 \frametitle{Learning Parity with Noise Problem $\LPN$}
-\begin{itemize}
+\begin{itemize}[<+->]
  \item Dimension $\ell$ (security parameter), $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right]$
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
  \begin{overprint}
- \onslide<1>
+ \onslide<2>
  \begin{align*}
   {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\  
   \end{align*}
 
-  \onslide<2>
+  \onslide<3>
   \begin{align*}
   {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\
   {\color{blue}{\vect{a_2}}} \R \zol \quad, \quad  {\color{red}{b_2}} &= <{\color{blue}{\vect{a_2}}} \: , \: \vect{s}> \: \xor \: e_2 \\
@@ -70,7 +70,7 @@
    {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
   \end{align*}
 
-  \onslide<3>
+  \onslide<4->
   \vspace*{25pt}
 \[
 {\color{blue} \vect{A}} = \begin{pmatrix}
@@ -82,8 +82,8 @@
  \end{overprint}
   Errors $e_i \gets \Ber_{\tau}$, i.e. $\Pr(e_i=1)= \tau$
  \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$
- \item $\LPN$ becomes trivial with $\tau=0$ (Gaussian elimination)
- \item decisional and search $\LPN$ are \emph{``polinomially equivalent''} \\ 
+ \item $\LPN$ becomes trivial with no error $\tau=0$ (Gaussian elimination)
+ \item \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
  \end{itemize}
 \end{frame}
 
@@ -486,7 +486,7 @@ Our commitment scheme is statistically binding and computationally hiding
 \begin{frame}
 \frametitle{Proof}
 \begin{block}{Statistically binding}
- $\mathtt{S}$ can change his mind after committing with negligible property even if he has infinite computing power
+ even if $\mathtt{S}$ is computationally unbounded she cannot cheat with probability greater than $2^{-k}$
 \end{block}
 
 \begin{block}{Computationally hiding}
@@ -521,13 +521,12 @@ where $\vect{b} = \begin{cases}
  \onslide<1>\begin{center}\pgfuseimage{0}\end{center}
  \onslide<2>\begin{center}\pgfuseimage{1}\end{center}
  \onslide<3>\begin{center}\pgfuseimage{2}\end{center}
- \onslide<4>\begin{center}\pgfuseimage{3}\end{center}
+ \onslide<4>\begin{center}\pgfuseimage{3}\end{center} 
  \onslide<5>\begin{center}\pgfuseimage{4}\end{center}
  \onslide<6>\begin{center}\pgfuseimage{5}\end{center}
- \onslide<7>\begin{center}\pgfuseimage{5}\end{center}
-\end{overprint}
-
-\begin{overprint}
+ \end{overprint}
+ 
+ \begin{overprint}
  \onslide<5>
 \begin{block}{case $1)$  }
 $\vect{b}$ is random $\Rightarrow$ $\vect{c} = \vect{b} \xor \vect{A''}m$ is a \alert{onetime-pad} encryption\\
@@ -541,15 +540,27 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
 \centering $\Rightarrow$ $\mathcal{A}$ guesses w.p. $1$ (by hypothesis)\\
 \end{block}
 
-\onslide<7>
- \begin{block}{case $1)$ and $2)$ }
-Let \mbox{E = {the reduction breaks the Exact-$\LPN$ problem}},  
- \begin{align*}
-  \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
-	 &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} \geq \mathtt{negl}(k)
-\end{align*}
-\end{block}
 \end{overprint}
+
+\end{frame}
+
+\begin{frame}
+
+  \begin{center}
+  \pgfdeclareimage[height=4.5cm]{3}{images/proof_3}
+  \pgfuseimage{3}
+  \end{center}
+
+  \begin{block}{case $1)$ and $2)$ }
+  Let \mbox{E = {the reduction breaks the Exact-$\LPN$ problem}},  
+  \begin{align*}
+    \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} \gg 2^{-k}
+  \end{align*}
+  \begin{center}   
+ Exact-$\LPN$ haspordness $\Rightarrow$ Commitment protocol computational hiding
+  \end{center}
+  \end{block}
 
 \end{frame}
 

@@ -53,7 +53,7 @@
 
 \begin{frame}
 \frametitle{Learning Parity with Noise Problem $\LPN$}
-\begin{itemize}[<+->]
+\begin{itemize}
  \item Dimension $\ell$ (security parameter), $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right]$
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
  \begin{overprint}
@@ -70,7 +70,7 @@
    {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
   \end{align*}
 
-  \onslide<4->
+  \onslide<4>
   \vspace*{25pt}
 \[
 {\color{blue} \vect{A}} = \begin{pmatrix}
@@ -565,6 +565,16 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
 \end{frame}
 
 \begin{frame}
+\frametitle{The commitment protocol: a $\LPN$-based variant}
+\begin{block}{$\LPN$ variant}
+\begin{itemize}
+ \item security directly based on the standard $\LPN$ problem
+ \item \textbf{Commit phase:} we set $w'= 2 \cdot \lfloor\tau k\rceil$ and we choose $\vect{e}$ such that $\vect{wt}(\vect{e}) \leq w'$
+ \end{itemize}
+
+\end{block}
+
+
 \begin{block}{Choice of parameters}
 According to
 \begin{center}
@@ -576,7 +586,7 @@ According to
 			\end{thebibliography} 
 \end{center}
 
-we choose $\ell=768$ and noise rate $\tau = \frac{1}{8}$ $\Rightarrow$ $2^{90}$ bytes of memory to solve $\LPN$ problem
+we choose $\ell=768$ and noise rate $\tau = \frac{1}{8}$ $\Rightarrow$ $2^{90}$ bytes of memory to solve $\LPN$
 \end{block}
 
 \end{frame}

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.3.26)  10 APR 2013 06:47
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.3.26)  10 APR 2013 13:42
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1925,6 +1925,8 @@ Overfull \hbox (9.6996pt too wide) in paragraph at lines 565--565
 
  <./images/proof_3.png>] [40
 
+ </usr/share/texmf/tex/latex/beamer/art/beamericonarticle.pdf>] [41
+
 ])
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
@@ -1945,10 +1947,10 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 26099 strings out of 493607
- 471053 string characters out of 3149945
- 605883 words of memory out of 3500000
- 28656 multiletter control sequences out of 15000+200000
+ 26144 strings out of 493607
+ 472594 string characters out of 3149945
+ 605944 words of memory out of 3500000
+ 28698 multiletter control sequences out of 15000+200000
  140411 words of font info for 93 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
  56i,23n,77p,953b,1023s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1977,10 +1979,10 @@ m/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf
 /fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8
 .pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf/fonts/
 type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (40 pages, 1001998 bytes).
+Output written on presentation.pdf (41 pages, 1007696 bytes).
 PDF statistics:
- 467 PDF objects out of 1000 (max. 8388607)
- 364 compressed objects within 4 object streams
- 85 named destinations out of 1000 (max. 500000)
+ 481 PDF objects out of 1000 (max. 8388607)
+ 374 compressed objects within 4 object streams
+ 88 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

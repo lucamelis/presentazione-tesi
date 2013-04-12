@@ -159,7 +159,7 @@ where $\ell$ is the security parameter
 \frametitle{Alekhnovich PKE scheme}
 
 \begin{block}{\textbf{Key Generation}}
- The sender $\mathtt{S}$ chooses
+ The receiver $\mathtt{R}$ chooses
  \begin{itemize}
   \item a secret key $\vect{s} \R \zol$
   \item $\vect{A} \R \Z^{q \times \ell}$ and the error $\vect{e} \gets \Ber_{\tau}^{q}$, where $ \tau \in \Theta(\frac{1}{\sqrt{\ell}}) $ \\
@@ -195,7 +195,7 @@ where $\ell$ is the security parameter
 \end{frame}
 
 \begin{frame}
-\frametitle{Protocol phases}
+\frametitle{ThPKE: Protocol phases}
   \begin{columns}[c]
     \column{0.50\textwidth}
   \begin{itemize}
@@ -480,8 +480,8 @@ and $I$ is the users subset
 
  \begin{block}{Proposed solutions}
     \begin{enumerate}
-     \item implement the receivers as \emph{stateful} machines (not good in resource-constrained devices)
-     \item make use of pseudorandom functions (i.e. deterministic algorithms that simulate truly random functions, given a ``seed'')
+     \item implement the receivers as \alert{stateful} machines (not good in resource-constrained devices)
+     \item make use of \alert{pseudorandom functions} (i.e. deterministic algorithms that simulate truly random functions, given a ``seed'')
     \end{enumerate}
  \end{block}
  
@@ -520,7 +520,7 @@ and $I$ is the users subset
 \onslide<1->
 \begin{block}{Setup Phase}
 In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$\\
-We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
+%We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
 We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.
 Finally, we set $w = \lfloor\tau k\rceil$.
 \end{block}
@@ -747,7 +747,7 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
  \begin{block}{$\LPN$ open problems}
   \begin{itemize}
    \item relation between standard $\LPN$ and some variants
-   \item $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? Is there a threshold?
+   \item Does $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? Is there a threshold?
    \item how to get some basic primitives from standard $\LPN$?
   \end{itemize}
 

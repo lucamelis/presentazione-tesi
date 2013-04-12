@@ -2,13 +2,14 @@
 
 \begin{frame}
  \frametitle{Scenario}
+ 
  \begin{block}{Cryptography schemes}
  \begin{itemize}
   \item address the security of communication across an insecure medium
   \item are usually based only on complexity assumptions (standard model)
  \end{itemize}
  \end{block}
- 
+ \onslide<2>
  \begin{block}{Near Future:}
  \begin{itemize}
     \item \alert{Problem:} What if someone constructs large quantum computers?
@@ -28,13 +29,14 @@
       \begin{itemize}
       \item \textbf{Hash-based cryptography}
       \item \textbf{Code-based cryptography}
-      \item \alert{\textbf{Lattice-based cryptography}}
+      \item \alert<2->{\textbf{Lattice-based cryptography}}
       \end{itemize}
+ \onslide<2->
  \begin{block}{\textbf{Our contribution}}
  \begin{itemize}
-  \item We investigate about the \alert{Learning Parity with Noise} ($\LPN$) problem
-  \item We propose a {\color{blue}{Threshold Public-Key Encryption}} scheme based on $\LPN$
-  \item We propose a {\color{blue}{Commitment protocol}} based on $\LPN$
+  \item<2-> We investigate about the \alert{Learning Parity with Noise} ($\LPN$) problem
+  \item<3-> We propose a {\color{blue}{Threshold Public-Key Encryption}} scheme based on $\LPN$
+  \item<4-> We propose a {\color{blue}{Commitment protocol}} based on $\LPN$
  \end{itemize}
 
 \end{block}
@@ -181,14 +183,14 @@ where $\ell$ is the security parameter
       \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
       \mbox{choose a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
       \mbox{compute $\vect{u}= \vect{f} \cdot \vect{A} $ } & & \\
-      \mbox{ $c= \left\langle \vect{f},\vect{b} \right\rangle \xor m$} & \sends{( \vect{u}, c ) } \\
+      \mbox{ $c= \langle \vect{f},\vect{b} \rangle \xor m$} & \sends{( \vect{u}, c ) } \\
     \end{protocol}   
   
  \end{figure}
 
  \begin{block}{\textbf{Decryption}}
- The receiver $\mathtt{R}$ computes $d = c \xor \left\langle \vect{s},\vect{u} \right\rangle = 
- \dots = \left\langle  \vect{f} , \vect{e} \right\rangle \xor m$ \\ 
+ The receiver $\mathtt{R}$ computes $d = c \xor \langle \vect{s},\vect{u} \rangle = 
+ \dots = \langle  \vect{f} , \vect{e} \rangle \xor m$ \\ 
 \end{block}
 \end{frame}
 
@@ -515,40 +517,88 @@ and $I$ is the users subset
 \begin{frame}
 \frametitle{The commitment protocol by \textit{Jain et al}} 
 
+\onslide<1->
 \begin{block}{Setup Phase}
 In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$\\
 We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
 We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.
 Finally, we set $w = \lfloor\tau k\rceil$.
 \end{block}
-
+\begin{overprint}
+\onslide<2>
 \begin{figure}
     \begin{protocol}{2}
     \protocolheader{\textbf{Commitment phase}}\\
     \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
      \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
-     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \sends{\vect{c}} \\
+     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \phantom{\sends{\vect{c}}}\\
+    \end{protocol}
+\end{figure}
+\onslide<3->
+\begin{figure}
+    \begin{protocol}{2}
+    \protocolheader{\textbf{Commitment phase}}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+     \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
+     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \sends{\vect{c}}\\
     \end{protocol}
 \end{figure}
 
+\end{overprint}
+
+\begin{overprint}
+ \onslide<4>
  \begin{figure}
    \begin{protocol}{2}
     \protocolheader{\textbf{Opening phase}}\\
    % \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
-     \mbox{computes $ \vect{d} = \left( \vect{m'},\vect{r'} \right) $} & \sends{\vect{d}}  \\
-    & & \mbox{computes $\vect{e'}=\vect{c} \xor \vect{A}\left( \vect{r'} \| \vect{m'} \right)$} \\
+     \mbox{define $ \vect{d} = \left( \vect{m'},\vect{r'} \right) $} & \sends{\vect{d}}  \\
+    & & \phantom{\mbox{computes $\vect{e'}=\vect{c} \xor \vect{A}\left( \vect{r'} \| \vect{m'} \right)$}}\\
+    & \phantom{\receives{ {Yes , No}}} & \phantom{\mbox{accepts iff $\vect{wt}(\vect{e'})= w$}} \\
+   \end{protocol} 
+ \end{figure}
+ 
+ \onslide<5>
+ \begin{figure}
+   \begin{protocol}{2}
+    \protocolheader{\textbf{Opening phase}}\\
+   % \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+     \mbox{define $\vect{d} = \left( \vect{m'},\vect{r'} \right) $} & \sends{\vect{d}}  \\
+    & & \mbox{computes $\vect{e'}=\vect{c} \xor \vect{A}\left( \vect{r'} \| \vect{m'} \right)$}\\
     & \receives{ {Yes , No}} & \mbox{accepts iff $\vect{wt}(\vect{e'})= w$} \\
    \end{protocol} 
  \end{figure}
+ 
 
+ 
+\end{overprint}
+
+ 
   \end{frame}
   
 \begin{frame}
 \frametitle{Proposed commitment protocol}
+
  \begin{block}{\alert{Problem}}
   We need a trusted third party for the common matrix $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right]$
  \end{block}
+ 
+\onslide<2-> 
 \begin{block}{Solution:}
+
+\begin{overprint}
+ 
+\onslide<2->
+\begin{figure}
+    \begin{protocol}{2}
+    \protocolheader{\textbf{Setup phase}}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+      \mbox{chooses $\vect{A'} \R \Z^{k \times \ell}$} & \sends{\vect{A'}} \\ 
+      & \phantom{\receives{\vect{A''}}} & \phantom{\mbox{chooses $\vect{A''} \R \Z^{k \times v}$ }} \\
+    \end{protocol}
+\end{figure}
+
+\onslide<3->
 \begin{figure}
     \begin{protocol}{2}
     \protocolheader{\textbf{Setup phase}}\\
@@ -557,8 +607,12 @@ Finally, we set $w = \lfloor\tau k\rceil$.
       & \receives{\vect{A''}} & \mbox{chooses $\vect{A''} \R \Z^{k \times v}$ } \\
     \end{protocol}
 \end{figure}
-The Commitment and Opening phases are the same as in the original scheme 
+\end{overprint}
+
 \end{block}
+\onslide<4>
+The Commitment and Opening phases are the same as in the original scheme 
+
 
 \end{frame}
 

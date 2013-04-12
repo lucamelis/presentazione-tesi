@@ -4,7 +4,7 @@
  \frametitle{Scenario}
  \begin{block}{Cryptography schemes}
  \begin{itemize}
-  \item addresse the security of communication across an insecure medium
+  \item address the security of communication across an insecure medium
   \item are usually based only on complexity assumptions (standard model)
  \end{itemize}
  \end{block}
@@ -24,24 +24,17 @@
 
 \begin{frame}
 \frametitle{Post-Quantum cryptography}
- Schemes that are believed to resist classical computers and quantum computers
+ Schemes that are believed to resist classical \& quantum computers
       \begin{itemize}
       \item \textbf{Hash-based cryptography}
       \item \textbf{Code-based cryptography}
-      \item \textbf{Lattice-based cryptography}
+      \item \alert{\textbf{Lattice-based cryptography}}
       \end{itemize}
- \begin{block}{Some Issues:}
-  \begin{itemize}
- \item \textbf{Efficiency} time and space 
- \item \textbf{Confidence} cryptanalysts experience 
- \item \textbf{Usability} infrastructure
-\end{itemize}
- \end{block}
-\begin{block}{Our contribution}
+ \begin{block}{\textbf{Our contribution}}
  \begin{itemize}
-  \item We investigate about the Learning Parity with Noise $\LPN$ Problem
-  \item We propose a \emph{Threshold Public-Key Encryption} scheme based on $\LPN$
-  \item We propose a \emph{Commitment protocol} based on $\LPN$
+  \item We investigate about the \alert{Learning Parity with Noise} ($\LPN$) problem
+  \item We propose a {\color{blue}{Threshold Public-Key Encryption}} scheme based on $\LPN$
+  \item We propose a {\color{blue}{Commitment protocol}} based on $\LPN$
  \end{itemize}
 
 \end{block}
@@ -53,8 +46,9 @@
 
 \begin{frame}
 \frametitle{Learning Parity with Noise Problem $\LPN$}
-\begin{itemize}[<+->]
+\begin{itemize}
  \item Dimension $\ell$ (security parameter), $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right]$
+ \vspace*{5pt}
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
  \begin{overprint}
  \onslide<2>
@@ -65,13 +59,12 @@
   \onslide<3>
   \begin{align*}
   {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\
-  {\color{blue}{\vect{a_2}}} \R \zol \quad, \quad  {\color{red}{b_2}} &= <{\color{blue}{\vect{a_2}}} \: , \: \vect{s}> \: \xor \: e_2 \\
    & \vdots \\
    {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
   \end{align*}
 
-  \onslide<4->
-  \vspace*{25pt}
+  \onslide<4>
+  \vspace*{15pt}
 \[
 {\color{blue} \vect{A}} = \begin{pmatrix}
             & {\color{blue}\vect{a_1}} & \\
@@ -81,38 +74,47 @@
 \]
  \end{overprint}
   Errors $e_i \gets \Ber_{\tau}$, i.e. $\Pr(e_i=1)= \tau$
- \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$
- \item $\LPN$ becomes trivial with no error $\tau=0$ (Gaussian elimination)
- \item \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
+\end{itemize}
+\vspace{5pt}
+  \begin{itemize}
+    \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$ 
+\vspace{5pt}
+    \item \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
  \end{itemize}
 \end{frame}
 
 \begin{frame}
  \frametitle{Learning Parity with Noise Problem $\LPN$}
 
-
-  \begin{block}{$\LPN$ variants}
-    \begin{itemize}
-      \item Ring $\LPN$
-      \item Subspace $\LPN$
-      \item Exact $\LPN$
-    \end{itemize} 
-  \end{block}
-
   \begin{block}{Hardness of $\LPN$}
-  Breaking the search $\LPN$ problem takes time
-  \begin{itemize}
-   \item $2^{\mathcal{\varTheta}(\mathcal{\ell / \log{\ell}})}$ having the same number of samples $q$
-   \item $2^{\mathcal{\varTheta}(\mathcal{\ell / \log{ \log {\ell} } })}$ having $q=poly(\ell)$ samples
-   \item $2^{\mathcal{\varTheta}(\mathcal{\ell})}$ having $q= \mathcal{\varTheta}(\ell)$ samples
-  \end{itemize}
+  Breaking the search $\LPN$ problem takes
+  
 
+% \begin{table}
+%     \begin{tabular}{cc}
+%     \toprule
+%     time & queries ($q$)\\
+%     \midrule
+%     $2^{\mathcal{\varTheta}(\mathcal{\ell / \log{\ell}})}$ &  $2^{\mathcal{\varTheta}(\mathcal{\ell / \log{\ell}})}$ \\
+%     $2^{\mathcal{\varTheta}(\mathcal{\ell / \log{ \log {\ell} } })}$ & $ poly(\ell)$ \\
+%     $2^{\mathcal{\varTheta}(\mathcal{\ell})}$ & $ \mathcal{\varTheta}(\ell)$ \\
+%     \bottomrule
+%     \end{tabular}
+% \end{table}
+
+
+   \begin{itemize}
+    \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell / \log{\ell}})}$}} having the same number of samples $q$
+    \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell / \log{ \log {\ell} } })}$}} having $q=poly(\ell)$ samples
+    \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell})}$}} having $q= \mathcal{\varTheta}(\ell)$ samples
+   \end{itemize} 
+where $\ell$ is the security parameter
   \end{block}
 
   \begin{block}{Interesting features}
     \begin{itemize}
-      \item Efficiency $\Rightarrow$ suitable for limited computing power devices (e.g. RFID).
-      \item quantum algorithm resistance
+      \item \textbf{Efficiency} $\Rightarrow$ suitable for limited computing power devices (e.g. RFID).
+      \item \textbf{quantum algorithm resistance}
     \end{itemize}
   \end{block}
 
@@ -122,22 +124,26 @@
 
 \begin{frame}
 \frametitle{Threshold Public-Key Encryption schemes}
-\begin{block}{Scenario}
+\begin{block}{Public-key cryptography}
   \begin{itemize}
-   \item In public-key cryptography in general, the ability of decrypting or signing is restricted to the owner of the secret key.
+   \item the ability of decrypting or signing is restricted to the owner of the secret key.
    \item $\Rightarrow$ \alert{only one person has all the power} 
   \end{itemize}  
  \end{block}
+ \end{frame}
  
- \begin{block}{Solution}
+
+ \begin{frame}
+ \frametitle{Threshold Public-Key Encryption schemes}
+ \begin{block}{Solution: Threshold PKE}
  \begin{itemize}
-  \item Threshold PKE shares trust among a group of users, such that \emph{enough} of them, the \emph{threshold}, is needed to sign or decrypt
+  \item Shares trust among a group of users, such that \emph{enough} of them, the \emph{threshold}, is needed to sign or decrypt
   \item The secret key is split into shares and each share is given to a group of users.
  \end{itemize}  
  \end{block}
  
- \begin{block}{Our contribution}
- A Threshold Public-Key Encryption scheme which is:
+ \begin{block}{\textbf{Our contribution}}
+ A {\color{red}{Threshold Public-Key Encryption}} scheme which is:
  \begin{itemize}
    \item based on $\LPN$
    \item secure in the \emph{Semi-honest} model
@@ -145,12 +151,10 @@
 
  \end{block}
 
-
-
 \end{frame}
 
 \begin{frame}
-\frametitle{Alekhnovich Public Key Encryption scheme}
+\frametitle{Alekhnovich PKE scheme}
 
 \begin{block}{\textbf{Key Generation}}
  The sender $\mathtt{S}$ chooses
@@ -171,13 +175,15 @@
 %  \end{figure}
 
   \begin{figure}
+  
     \begin{protocol}{2}
       \protocolheader{\textbf{Encryption} of a message bit $m \in \Z$}\\
       \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
       \mbox{choose a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
       \mbox{compute $\vect{u}= \vect{f} \cdot \vect{A} $ } & & \\
       \mbox{ $c= \left\langle \vect{f},\vect{b} \right\rangle \xor m$} & \sends{( \vect{u}, c ) } \\
-    \end{protocol}
+    \end{protocol}   
+  
  \end{figure}
 
  \begin{block}{\textbf{Decryption}}
@@ -187,181 +193,256 @@
 \end{frame}
 
 \begin{frame}
-\begin{block}{Protocol phases: }
-\begin{itemize}
- \item<1-> \alert<1,1>{ \textbf{Key Generation} }
- \item<2-> \alert<2,2>{ \textbf{Key Assembly} }
- \item<3-> \alert<3,3>{ \textbf{Encryption} }
- \item<4-> \alert<4,4>{ \textbf{Partial Decryption} } 
- \item<5-> \alert<5,5>{ \textbf{Finish Decryption} }
+\frametitle{Protocol phases}
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+  \begin{itemize}
+ \item<1> \alert<1,1>{ \textbf{Key Generation} }
+ \item<2> \alert<2,2>{ \textbf{Key Assembly} }
+ \item<3-5> \alert<3-5>{ \textbf{Encryption} }
+ \item<6-10> \alert<6-10>{ \textbf{Partial Decryption} } 
+ \item<11> \alert<11,11>{ \textbf{Finish Decryption} }
  \end{itemize} 
-\end{block}
+    \column{0.50\textwidth}
 \begin{overprint}
  \onslide<1> \begin{center}\pgfuseimage{key_gen}\end{center}
  \onslide<2> \begin{center}\pgfuseimage{key_assembly}\end{center}
- \onslide<3> \begin{center}\pgfuseimage{enc}\end{center}
- \onslide<4> \begin{center}\pgfuseimage{part_dec}\end{center}
- \onslide<5> \begin{center}\pgfuseimage{finish}\end{center}
+ \onslide<3-5> \begin{center}\pgfuseimage{enc}\end{center}
+ \onslide<6-10> \begin{center}\pgfuseimage{part_dec}\end{center}
+ \onslide<11> \begin{center}\pgfuseimage{finish}\end{center}
 \end{overprint}
 
-\end{frame}
-
-\begin{frame}
-\begin{block}{Key Generation}
- \begin{itemize}
-  \item All the receivers share a matrix $\vect{A}  \R \Z^{q \times \ell}$
-  \item Each receiver $\mathtt{R_i}$ \alert{indipendently} choose a secret key $\vect{s_i} \R \zol$ and an error $\vect{e_i} \gets \Ber_{\tau}^{q}$
-  \item the public key for $\mathtt{R_i}$ is the pair $\left( \vect{A},\vect{b_i}=\vect{A}\vect{s_i} \xor \vect{e_i} \right)$
- \end{itemize}  
- \end{block}
+\end{columns}
+\\
+%  \begin{columns}[c]
+%  \column{0.5\textwidth}
  
+   \begin{overprint}
+ \onslide<1>
+ \begin{block}{Key Generation}
+  \begin{itemize}
+   \item All the receivers share a matrix $\vect{A}  \R \Z^{q \times \ell}$
+   \item Each receiver $\mathtt{R_i}$ \alert{indipendently} choose a secret key $\vect{s_i} \R \zol$ and an error $\vect{e_i} \gets \Ber_{\tau}^{q}$
+   \item the public key for $\mathtt{R_i}$ is the pair $\left( \vect{A},\vect{b_i}=\vect{A}\vect{s_i} \xor \vect{e_i} \right)$
+  \end{itemize}  
+  \end{block}
+  
+ \onslide<2>
  \begin{block}{Key Assembly}  
- The combined public key is the pair $\left( \vect{A},\vect{b} \right)$, where $\vect{b} = \bigoplus_{i \in I} \vect{b_i}$ ($I$ is the users subset)
- \end{block}
+  The combined public key is the pair $\left( \vect{A},\vect{b} \right)$, where 
+  \[
+  \vect{b} = \bigoplus_{i \in I} \vect{b_i} 
+   
+  \]
+and $I$ is the users subset
+  \end{block}
+  
+	    \onslide<3>
+	    \begin{figure}
+	    
+	    \begin{protocol}{2}
+% 		\protocolheader{Encryption Phase}\\
+		\participants{Sender \underline{$\mathtt{S}$}}{Receivers \underline{$\mathtt{R_i},\mathtt{R_j}$ }} \\
+		\left( \vect{C_1},\vect{c_2} \right) \gets \alert{\mathtt{ThLPN.Enc}}(m,\vect{b}) & \phantom{\sends{(\vect{C_1},\vect{c_2})} }\\    
+	      \end{protocol} 
+	    
+	    \end{figure}
+	    
+	    \onslide<4-5>	    
+	    \begin{figure}
+	    
+	    \begin{protocol}{2}
+% 		\protocolheader{Encryption Phase}\\
+		\participants{Sender \underline{$\mathtt{S}$}}{Receivers \underline{$\mathtt{R_i},\mathtt{R_j}$ }} \\
+		\left( \vect{C_1},\vect{c_2} \right) \gets \alert{\mathtt{ThLPN.Enc}}(m,\vect{b}) & \phantom{\sends{(\vect{C_1},\vect{c_2})} }\\    
+	      \end{protocol} 
+	    
+	    \end{figure}
 
-\end{frame}
-\begin{frame}
+	    \begin{block}{Encryption function (Alekhnovich scheme)}
+	    \[
+	    \vect{C_1} &= \vect{F} \cdot \vect{A}, \: \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \underbrace{\begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix}}_{q} \cdot m \mbox{ \qquad where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$}
+	    \]
+	      \end{block}
+	    
+	    \onslide<5>
+	    \begin{figure}
+	    \begin{protocol}{2}
+% 		\protocolheader{Encryption Phase}\\
+		\participants{Sender \underline{$\mathtt{S}$}}{Receivers \underline{$\mathtt{R_i},\mathtt{R_j}$ }} \\
+		\left( \vect{C_1},\vect{c_2} \right) \gets \alert{\mathtt{ThLPN.Enc}}(m,\vect{b}) &  \sends{(\vect{C_1},\vect{c_2})}   \\    
+	      \end{protocol}
+	    \end{figure}
+	    \begin{block}{Encryption function (Alekhnovich scheme)}
+	    \[
+	    \vect{C_1} &= \vect{F} \cdot \vect{A}, \: \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \underbrace{\begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix}}_{q} \cdot m \mbox{ \qquad where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$}
+	    \]
+	      \end{block}
 
-\begin{overprint}
-\only<1,2>{
+\onslide<6>
 \begin{figure}
-\begin{mdframed} 
-\begin{protocol}{2}
-    \protocolheader{Encryption Phase}\\
-    \participants{Sender \underline{$\mathtt{S}$}}{Receivers \underline{$\mathtt{R_i},\mathtt{R_j}$ }} \\
-     \left( \vect{C_1},\vect{c_2} \right) \gets \alert{\mathtt{ThLPN.Enc}}(m,\vect{b}) & \phantom{\sends{(\vect{C_1},\vect{c_2})} }\\    
-  \end{protocol} 
-\end{mdframed} 
-\end{figure}
-}
-
-\only<3>{
-\begin{figure}
-\begin{mdframed}
-\begin{protocol}{2}
-    \protocolheader{Encryption Phase}\\
-    \participants{Sender \underline{$\mathtt{S}$}}{Receivers \underline{$\mathtt{R_i},\mathtt{R_j}$ }} \\
-     \left( \vect{C_1},\vect{c_2} \right) \gets \alert{\mathtt{ThLPN.Enc}}(m,\vect{b}) &  \sends{(\vect{C_1},\vect{c_2})}   \\    
-  \end{protocol}
- 
-\end{mdframed}
- 
-\end{figure}
-}
- 
-\end{overprint}
-
-
-\onslide<2,3>{
-\begin{block}{Encryption function (Alekhnovich scheme)}
- \begin{align*}
-  \vect{C_1} &= \vect{F} \cdot \vect{A}, \\
-  \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix} \cdot m 
- \end{align*}
-where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$
- \end{block}
-}
-
-\end{frame}
-
-\begin{frame}
-
-\begin{overprint} 
-\only<1,2>{
-\begin{figure}
-  \begin{mdframed} 
+   
     \begin{protocol}{2}
-     \protocolheader{Partial Decryption Phase}\\
+%      \protocolheader{Partial Decryption Phase}\\
       \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
       \vect{d_i} \gets \alert{\mathtt{ThLPN.Pdec}}(\vect{C_1},\vect{c_2},\vect{s_i})  & \phantom{\sends{\vect{d_i}}}   \\
       & \phantom{\receives{\vect{d_j}}} & \phantom{\vect{d_j} \gets} \\ 
       & & \phantom{\mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_j})} \\
     \end{protocol}
-  \end{mdframed}
+  
 \end{figure}
-}
 
-\only<3>{
+\onslide<7>
 \begin{figure}
-  \begin{mdframed}
+   
     \begin{protocol}{2}
-       \protocolheader{Partial Decryption Phase}\\
+%      \protocolheader{Partial Decryption Phase}\\
+      \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
+      \vect{d_i} \gets \alert{\mathtt{ThLPN.Pdec}}(\vect{C_1},\vect{c_2},\vect{s_i})  & \phantom{\sends{\vect{d_i}}}   \\
+      & \phantom{\receives{\vect{d_j}}} & \phantom{\vect{d_j} \gets} \\ 
+      & & \phantom{\mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_j})} \\
+    \end{protocol}
+  
+\end{figure}
+\begin{block}{Partial decryption function (Alekhnovich scheme)}
+\[
+ \vect{d_i} = \vect{C_1} \cdot \vect{s_i} \xor \vect{\nu_{i}} 
+\]
+ where  $ \vect{\nu_i} \gets \Ber_{\sigma}^{q} $ 
+\end{block}
+
+
+\onslide<8>
+\begin{figure}
+  
+    \begin{protocol}{2}
+%        \protocolheader{Partial Decryption Phase}\\
       \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
       \vect{d_i} \gets \alert{\mathtt{ThLPN.Pdec}}(\vect{C_1},\vect{c_2},\vect{s_i})  & \sends{\vect{d_i}}   \\
       & \phantom{\receives{\vect{d_j}}} & \phantom{\vect{d_j} \gets} \\ 
       & & \phantom{\mathtt{ThLPN.Pdec}(\vect{C_1},\vect{c_2},\vect{s_j})} \\
     \end{protocol}
-  \end{mdframed}
+  
 \end{figure}
-}
+\begin{block}{Partial decryption function (Alekhnovich scheme)}
+\[
+ \vect{d_i} = \vect{C_1} \cdot \vect{s_i} \xor \vect{\nu_{i}} 
+\]
+ where  $ \vect{\nu_i} \gets \Ber_{\sigma}^{q} $ 
+\end{block}
 
-\only<4>{
+
+\onslide<9>
 \begin{figure}
-  \begin{mdframed}
+  
     \begin{center}
     
     \end{center}
     \begin{protocol}{2}
-       \protocolheader{Partial Decryption Phase}\\
+%        \protocolheader{Partial Decryption Phase}\\
       \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
       \vect{d_i} \gets \alert{\mathtt{ThLPN.Pdec}}(\vect{C_1},\vect{c_2},\vect{s_i})  & \sends{\vect{d_i}}   \\
       & \phantom{\receives{\vect{d_j}}} & \vect{d_j} \gets \\ 
       & & \alert{\mathtt{ThLPN.Pdec}}(\vect{C_1},\vect{c_2},\vect{s_j}) \\
     \end{protocol}
-  \end{mdframed}
+  
 \end{figure}
-}
+\begin{block}{Partial decryption function (Alekhnovich scheme)}
+\[
+ \vect{d_i} = \vect{C_1} \cdot \vect{s_i} \xor \vect{\nu_{i}} 
+\]
+ where  $ \vect{\nu_i} \gets \Ber_{\sigma}^{q} $ 
+\end{block}
 
-\only<5,6>{
+
+
+\onslide<10>
 \begin{figure}
-  \begin{mdframed}
+  
     \begin{protocol}{2}
-      \protocolheader{Partial Decryption Phase}\\
+%       \protocolheader{Partial Decryption Phase}\\
       \participants{Receiver \underline{$\mathtt{R_i}$}}{Receiver \underline{$\mathtt{R_j}$ }} \\
       \vect{d_i} \gets \alert{\mathtt{ThLPN.Pdec}}(\vect{C_1},\vect{c_2},\vect{s_i})  & \sends{\vect{d_i}}   \\
       & \receives{\vect{d_j}} & \vect{d_j} \gets \\ 
       & & \alert{\mathtt{ThLPN.Pdec}}(\vect{C_1},\vect{c_2},\vect{s_j}) \\
     \end{protocol}
-  \end{mdframed}
+  
 \end{figure}
-}
+\begin{block}{Partial decryption function (Alekhnovich scheme)}
+\[
+ \vect{d_i} = \vect{C_1} \cdot \vect{s_i} \xor \vect{\nu_{i}} 
+\]
+ where  $ \vect{\nu_i} \gets \Ber_{\sigma}^{q} $ 
+\end{block}
+
 
 % \end{overprint}
 % \begin{overprint}
  
-\only<2-5>{
-\begin{block}{Partial decryption function (Alekhnovich scheme)}
- \begin{equation*}
- \vect{d_i} = \vect{C_1} \cdot \vect{s_i} \xor \vect{\nu_{i}} 
- \end{equation*}
- where  $ \vect{\nu_i} \gets \Ber_{\sigma}^{q} $ 
-\end{block}
-}
-\only<6>{
-\begin{block}{Finish decryption}
-\begin{itemize}
- \item Each receiver indipendently computes the vector 
-\begin{eqnarray*}
-\vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
-	  =  \vect{F}\cdot \vect{e} \xor \begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
-\end{eqnarray*}
-\item the bit in the vector $\vect{d}$ that is in majority is separately chosen by each receiver as the plaintext $m$
-\end{itemize}
-\end{block}
-}
-\end{overprint}
 
+
+ \onslide<11>
+ \begin{block}{Finish decryption}
+ \begin{itemize}
+  \item Each receiver indipendently computes the vector 
+ \begin{eqnarray*}
+ \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
+ 	  =  \vect{F}\cdot \vect{e} \xor \underbrace{\begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix}}_{q} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
+ \end{eqnarray*}
+ \item the bit in the vector $\vect{d}$ that is in majority is separately chosen by each receiver as the plaintext $m$
+ \end{itemize}
+ \end{block}
+ 
+
+ \end{overprint}
+
+  
+%  \end{columns}
 
 \end{frame}
+
+% \begin{frame}
+% 
+% \onslide<2,3>{
+% \begin{block}{Encryption function (Alekhnovich scheme)}
+%  \begin{align*}
+%   \vect{C_1} &= \vect{F} \cdot \vect{A}, \\
+%   \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix} \cdot m 
+%  \end{align*}
+% where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$
+%  \end{block}
+% }
+% 
+% \end{frame}
+% 
+% \begin{frame}
+% 
+% 
+% \only<6>{
+% \begin{block}{Finish decryption}
+% \begin{itemize}
+%  \item Each receiver indipendently computes the vector 
+% \begin{eqnarray*}
+% \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
+% 	  =  \vect{F}\cdot \vect{e} \xor \begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
+% \end{eqnarray*}
+% \item the bit in the vector $\vect{d}$ that is in majority is separately chosen by each receiver as the plaintext $m$
+% \end{itemize}
+% \end{block}
+% }
+% \end{overprint}
+% 
+% 
+% \end{frame}
 
 \begin{frame}
  \frametitle{Protocol Security Analysis }
 
   \begin{block}{Semi-honest model}
-    We make the following two assumptions:
+    A semi-honest party:
     \begin{enumerate}
-      \item The semi-honest party will indeed toss a fair coin
-      \item The semi-honest party will send all messages as instructed by the protocol
+      \item Follows the protocol properly
+      \item Keeps a record of all its intermediate computations
     \end{enumerate}
   \end{block}
 
@@ -377,8 +458,10 @@ where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatri
   \end{block}
   
 \end{frame}
+
 \begin{frame}
-  \begin{block}{Relaxed Semi-honest model}
+ \frametitle{Protocol Security Analysis }
+\begin{block}{Relaxed Semi-honest model}
    \begin{itemize}
     \item Semi-honest model not so realistic (\emph{replay attacks} may occur)
     \item \alert{Problem:} if the same message is encrypted multiple times then it is possible to recover information about the secret key from the ciphertexts\\
@@ -393,7 +476,7 @@ where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatri
    \end{itemize}
   \end{block}
 
- \begin{block}{Possible solutions}
+ \begin{block}{Proposed solutions}
     \begin{enumerate}
      \item implement the receivers as \emph{stateful} machines (not good in resource-constrained devices)
      \item make use of pseudorandom functions (i.e. deterministic algorithms that simulate truly random functions, given a ``seed'')
@@ -415,11 +498,11 @@ where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatri
 \end{block}
 
 
-\begin{block}{Our contribution}
- We presented a commitment protocol
+\begin{block}{\textbf{Our contribution}}
+ We presented a {\color{red}{Commitment protocol}}
  \begin{itemize}
-  \item based on the commitment protocol by Jain et al
-  \item based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=w$)
+  \item based on the commitment protocol by \textit{Jain et al}
+  \item based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=\lfloor \tau \cdot \ell \rceil$)
   \item not in a \emph{common reference string (CRS)} model
  \end{itemize}
 \end{block}
@@ -430,24 +513,38 @@ where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatri
 
 
 \begin{frame}
-\frametitle{The commitment protocol} 
+\frametitle{The commitment protocol by \textit{Jain et al}} 
 
+\onslide<1->
 \begin{block}{Setup Phase}
 In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$\\
 We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
 We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.
 Finally, we set $w = \lfloor\tau k\rceil$.
 \end{block}
-
+\begin{overprint}
+\onslide<2->
 \begin{figure}
     \begin{protocol}{2}
     \protocolheader{\textbf{Commitment phase}}\\
     \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
      \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
-     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \sends{\vect{c}} \\
+     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \phantom{\sends{\vect{c}}}\\
+    \end{protocol}
+\end{figure}
+\onslide<3->
+\begin{figure}
+    \begin{protocol}{2}
+    \protocolheader{\textbf{Commitment phase}}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+     \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
+     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \sends{\vect{c}}\\
     \end{protocol}
 \end{figure}
 
+\end{overprint}
+
+\begin{overprint}
  \begin{figure}
    \begin{protocol}{2}
     \protocolheader{\textbf{Opening phase}}\\
@@ -458,9 +555,13 @@ Finally, we set $w = \lfloor\tau k\rceil$.
    \end{protocol} 
  \end{figure}
 
+\end{overprint}
+
+ 
   \end{frame}
   
 \begin{frame}
+\frametitle{Proposed commitment protocol}
  \begin{block}{\alert{Problem}}
   We need a trusted third party for the common matrix $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right]$
  \end{block}
@@ -476,12 +577,39 @@ Finally, we set $w = \lfloor\tau k\rceil$.
 The Commitment and Opening phases are the same as in the original scheme 
 \end{block}
 
-\begin{theorem}
-Our commitment scheme is statistically binding and computationally hiding
-\end{theorem}
-
 \end{frame}
 
+\begin{frame}
+\frametitle{The commitment protocol: a $\LPN$-based variant}
+\begin{block}{$\LPN$ variant}
+\begin{itemize}
+ \item security directly based on the standard $\LPN$ problem
+ \item \textbf{Commit phase:} we set $w'= 2 \cdot \lfloor\tau k\rceil$ and we choose $\vect{e}$ such that $\vect{wt}(\vect{e}) \leq w'$
+ \end{itemize}
+
+\end{block}
+
+
+\begin{block}{Choice of parameters}
+According to
+\begin{center}
+\begin{thebibliography}{XX}
+   			\bibitem{LFP:06} 
+   			 \textbf{Levieil, \'Eric and Fouque, Pierre-Alain}
+  			 \newblock An Improved LPN Algorithm
+   				\newblock \emph{Springer Berlin Heidelberg}, 2006
+			\end{thebibliography} 
+\end{center}
+
+we choose $\ell=768$ and noise rate $\tau = \frac{1}{8}$ $\Rightarrow$ $2^{90}$ bytes of memory to solve $\LPN$
+\end{block}
+
+\begin{theorem}
+Our commitment scheme is statistically binding and computationally hiding 
+\end{theorem}
+
+
+\end{frame}
 
 \begin{frame}
 \frametitle{Proof}
@@ -517,6 +645,8 @@ where $\vect{b} = \begin{cases}
 \end{frame}
 
 \begin{frame}
+\frametitle{Proof}
+
 \begin{overprint}
  \onslide<1>\begin{center}\pgfuseimage{0}\end{center}
  \onslide<2>\begin{center}\pgfuseimage{1}\end{center}
@@ -530,14 +660,13 @@ where $\vect{b} = \begin{cases}
  \onslide<5>
 \begin{block}{case $1)$  }
 $\vect{b}$ is random $\Rightarrow$ $\vect{c} = \vect{b} \xor \vect{A''}m$ is a \alert{onetime-pad} encryption\\
-$\Rightarrow$ $\mathcal{A}$ guesses w.p. $\frac{1}{2}$\\
-\centering Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment
+\centering $\Rightarrow$ $\mathcal{A}$ guesses w.p. $\frac{1}{2}$\\
 \end{block}
 
 \onslide<6>
 \begin{block}{case $2)$  }
 $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed commitment\\
-\centering $\Rightarrow$ $\mathcal{A}$ guesses w.p. $1$ (by hypothesis)\\
+\centering  $\Rightarrow$ $\mathcal{A}$ guesses w.p. $1$ (by hypothesis)\\ 
 \end{block}
 
 \end{overprint}
@@ -545,9 +674,10 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
 \end{frame}
 
 \begin{frame}
+\frametitle{Proof}
 
   \begin{center}
-  \pgfdeclareimage[height=4.5cm]{3}{images/proof_3}
+  \pgfdeclareimage[height=3.5cm]{3}{images/proof_3}
   \pgfuseimage{3}
   \end{center}
 
@@ -558,49 +688,15 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
 	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} \gg 2^{-k}
   \end{align*}
   \begin{center}   
-      \centering Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment
+      \alert{Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment}
   \end{center}
   \end{block}
 
 \end{frame}
 
-\begin{frame}
-\frametitle{$\LPN$ variant}
-\begin{block}{}
-\begin{itemize}
- \item security directly based on the standard $\LPN$ problem
-\end{itemize}
-
-\end{block}
-
-
-\begin{block}{Choice of parameters}
-According to
-\begin{center}
-\begin{thebibliography}{XX}
-   			\bibitem{LFP:06} 
-   			 \textbf{Levieil, \'Eric and Fouque, Pierre-Alain}
-  			 \newblock An Improved LPN Algorithm
-   				\newblock \emph{Springer Berlin Heidelberg}, 2006
-			\end{thebibliography} 
-\end{center}
-
-we choose $\ell=768$ and noise rate $\tau = \frac{1}{8}$ $\Rightarrow$ $2^{90}$ bytes of memory to solve $\LPN$ problem
-\end{block}
-
-\end{frame}
  
 \begin{frame}
  \frametitle{Conclusions and Open Problems}
- 
- \begin{block}{$\LPN$ open problems}
-  \begin{itemize}
-   \item relation between standard $\LPN$ and some variants
-   \item $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? Is there a threshold?
-   \item how to get some basic primitives from standard $\LPN$?
-  \end{itemize}
-
- \end{block}
  
  \begin{block}{Our contribution}
 \begin{itemize}
@@ -610,5 +706,15 @@ we choose $\ell=768$ and noise rate $\tau = \frac{1}{8}$ $\Rightarrow$ $2^{90}$ 
 \end{itemize}
   
  \end{block}
+
+ \begin{block}{$\LPN$ open problems}
+  \begin{itemize}
+   \item relation between standard $\LPN$ and some variants
+   \item $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? Is there a threshold?
+   \item how to get some basic primitives from standard $\LPN$?
+  \end{itemize}
+
+ \end{block}
+ 
 
 \end{frame}

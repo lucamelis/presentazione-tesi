@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.3.26)  10 APR 2013 15:34
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/TeX Live for SUSE Linux) (format=pdflatex 2013.3.26)  12 APR 2013 13:19
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1632,22 +1632,22 @@ LaTeX Font Info:    Font shape `OMS/lmr/m/n' in size <9> not available
 
 ]
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <9> on input line 49.
+(Font)              <9> on input line 42.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <6> on input line 49.
+(Font)              <6> on input line 42.
  [3
 
 ]
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 52.
+(hyperref)                removing `math shift' on input line 45.
 
 
 Package hyperref Warning: Token not allowed in a PDF string (PDFDocEncoding):
-(hyperref)                removing `math shift' on input line 52.
+(hyperref)                removing `math shift' on input line 45.
 
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <14.4> on input line 88.
+(Font)              <14.4> on input line 84.
 [4
 
 ] [5
@@ -1656,274 +1656,2240 @@ LaTeX Font Info:    External font `lmex10' loaded for size
 
 ] [7
 
-]
-Overfull \vbox (0.62218pt too high) detected at line 119
- []
-
-[8
+] [8
 
 ] [9
 
+] [10
+
 ]
-LaTeX Font Info:    Try loading font information for T1+lmtt on input line 187.
+LaTeX Font Info:    Try loading font information for T1+lmtt on input line 193.
 
  (/usr/share/texmf/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
 )
-Overfull \vbox (1.0375pt too high) detected at line 187
+Overfull \vbox (1.0375pt too high) detected at line 193
  []
 
-[10
-
-] [11
-
- <./images/key_gen.png>] [12
-
- <./images/key_assembly.png>] [13
-
- <./images/enc.png>] [14
-
- <./images/part_dec.png>] [15
-
- <./images/finish.png>] [16
+[11
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 265.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 265.
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
 
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 265.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 265.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
+[12
+
+ <./images/key_gen.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
+[13
+
+ <./images/key_assembly.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
+[14
+
+ <./images/enc.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
+[15
+
+]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+! Class beamer Error: Overprints may not overlap.
+
+See the beamer class documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+This error message was generated by an \errmessage
+command, so I can't give any explicit help.
+Pretend that you're Hercule Poirot: Examine all clues,
+and deduce the truth by order and method.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
+[16
+
+]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
 [17
 
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 265.
+ <./images/part_dec.png>]
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 265.
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
 
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 265.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 265.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
 [18
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 265.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 265.
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
 
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 265.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 265.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
 [19
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 355.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
 
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
 [20
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 355.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
 
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.38136pt too high) detected at line 402
+ []
+
 [21
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 355.
+
+! LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
 
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
 
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Display math should end with $$.
+<to be read again> 
+                   \par 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+! LaTeX Error: Bad math environment delimiter.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.402 \end{frame}
+                 
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.402 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Display math should end with $$.
+<to be read again> 
+                   \endgroup 
+l.402 \end{frame}
+                 
+The `$' that I just saw supposedly matches a previous `$$'.
+So I shall assume that you typed `$$' both times.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
+                                                  = \vect {F} \cdot \vect {A...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+! Misplaced alignment tab character &.
+\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
+                                                  = \vect {F} \cdot \vect {b...
+l.402 \end{frame}
+                 
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+LaTeX Font Warning: Command \small invalid in math mode on input line 402.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 402--402
+[][]  
+ []
+
+
+Overfull \vbox (1.18694pt too high) detected at line 402
+ []
+
 [22
 
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 355.
+ <./images/finish.png>] [23
 
+] [24
 
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
-[23
+] [25
 
 ]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 355.
+Overfull \vbox (5.0156pt too high) detected at line 544
+ []
 
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
-[24
-
-]
-Package mdframed Info: mdframed detected package amsthm 
- changed the theoerem header of amsthm
-(mdframed)              on input line 355.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 355.
-
-Package mdframed Info: mdframed inside float 
- mdframed uses option nobreak mdframed on input line 355.
-Package mdframed Info: mdframed inside a box 
- mdframed uses option nobreak mdframed on input line 355.
-[25
-
-] [26
+[26
 
 ] [27
 
 ] [28
 
-]
-Overfull \vbox (5.0156pt too high) detected at line 461
+ </usr/share/texmf/tex/latex/beamer/art/beamericonarticle.pdf>]
+Overfull \vbox (11.17165pt too high) detected at line 628
  []
 
 [29
 
-] [30
-
-]
-Overfull \vbox (11.17165pt too high) detected at line 517
- []
-
-[31
-
  <./images/adv.png> <./images/oracle.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
+[][]  
+ []
+
+[30
+
+ <./images/proof_0.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
+[][]  
+ []
+
+[31
+
+ <./images/proof_1.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 [32
 
- <./images/proof_0.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+ <./images/proof_2.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 [33
 
- <./images/proof_1.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+ <./images/proof_3.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 [34
 
- <./images/proof_2.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+ <./images/proof_4.png>]
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 657--657
 [][]  
  []
 
 [35
 
- <./images/proof_3.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
-[][]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
-[][]  
+ <./images/proof_5.png>]
+Overfull \hbox (9.6996pt too wide) in paragraph at lines 678--678
+[]  
  []
 
 [36
 
- <./images/proof_4.png>]
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
-[][]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 545--545
-[][]  
- []
-
-[37
-
- <./images/proof_5.png>]
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 565--565
-[]  
- []
-
-[38
-
- <./images/proof_3.png>] [39
-
- </usr/share/texmf/tex/latex/beamer/art/beamericonarticle.pdf>] [40
+ <./images/proof_3.png>] [37
 
 ])
 \tf@nav=\write6
@@ -1945,15 +3911,15 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 26144 strings out of 493607
- 472600 string characters out of 3149945
- 605933 words of memory out of 3500000
- 28699 multiletter control sequences out of 15000+200000
+ 26052 strings out of 493607
+ 470233 string characters out of 3149945
+ 612997 words of memory out of 3500000
+ 28613 multiletter control sequences out of 15000+200000
  140729 words of font info for 94 fonts, out of 3000000 for 9000
  831 hyphenation exceptions out of 8191
- 56i,23n,77p,953b,1023s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 56i,25n,64p,953b,933s stack positions out of 5000i,500n,10000p,200000b,50000s
 {/usr/share/texmf/fonts/enc/dvips/lm/lm-mathsy.enc}{/usr/share/texmf/fonts/en
-c/dvips/lm/lm-mathit.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-ec.enc}{/usr/s
+c/dvips/lm/lm-ec.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm-mathit.enc}{/usr/s
 hare/texmf/fonts/enc/dvips/lm/lm-rm.enc}{/usr/share/texmf/fonts/enc/dvips/lm/lm
 -mathex.enc}</usr/share/texmf/fonts/type1/public/amsfonts/latxfont/line10.pfb><
 /usr/share/texmf/fonts/type1/public/lm/lmbsy7.pfb></usr/share/texmf/fonts/type1
@@ -1971,16 +3937,17 @@ blic/lm/lmr10.pfb></usr/share/texmf/fonts/type1/public/lm/lmr12.pfb></usr/share
 mr6.pfb></usr/share/texmf/fonts/type1/public/lm/lmr7.pfb></usr/share/texmf/font
 s/type1/public/lm/lmr8.pfb></usr/share/texmf/fonts/type1/public/lm/lmr9.pfb></u
 sr/share/texmf/fonts/type1/public/lm/lmri10.pfb></usr/share/texmf/fonts/type1/p
-ublic/lm/lmri7.pfb></usr/share/texmf/fonts/type1/public/lm/lmri9.pfb></usr/shar
-e/texmf/fonts/type1/public/lm/lmsy10.pfb></usr/share/texmf/fonts/type1/public/l
-m/lmsy6.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf
-/fonts/type1/public/lm/lmtt10.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8
-.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf/fonts/
-type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (40 pages, 1006020 bytes).
+ublic/lm/lmri12.pfb></usr/share/texmf/fonts/type1/public/lm/lmri7.pfb></usr/sha
+re/texmf/fonts/type1/public/lm/lmri9.pfb></usr/share/texmf/fonts/type1/public/l
+m/lmsy10.pfb></usr/share/texmf/fonts/type1/public/lm/lmsy6.pfb></usr/share/texm
+f/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt1
+0.pfb></usr/share/texmf/fonts/type1/public/lm/lmtt8.pfb></usr/share/texmf/fonts
+/type1/public/lm/lmtt9.pfb></usr/share/texmf/fonts/type1/public/amsfonts/symbol
+s/msbm10.pfb>
+Output written on presentation.pdf (37 pages, 1015758 bytes).
 PDF statistics:
- 475 PDF objects out of 1000 (max. 8388607)
- 369 compressed objects within 4 object streams
- 86 named destinations out of 1000 (max. 500000)
+ 460 PDF objects out of 1000 (max. 8388607)
+ 356 compressed objects within 4 object streams
+ 80 named destinations out of 1000 (max. 500000)
  160 words of extra memory for PDF output out of 10000 (max. 10000000)
 

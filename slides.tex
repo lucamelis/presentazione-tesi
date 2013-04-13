@@ -48,7 +48,7 @@
 
 \begin{frame}
 \frametitle{Learning Parity with Noise Problem $\LPN$}
-\begin{itemize}
+\begin{itemize}[<+->]
  \item Dimension $\ell$ (security parameter), $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right]$
  \vspace*{5pt}
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
@@ -65,7 +65,7 @@
    {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
   \end{align*}
 
-  \onslide<4>
+  \onslide<4->
   \vspace*{15pt}
 \[
 {\color{blue} \vect{A}} = \begin{pmatrix}
@@ -78,10 +78,12 @@
   Errors $e_i \gets \Ber_{\tau}$, i.e. $\Pr(e_i=1)= \tau$
 \end{itemize}
 \vspace{5pt}
+
+\onslide<5->
   \begin{itemize}
-    \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$ 
+    \item<5-> \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$ 
 \vspace{5pt}
-    \item \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
+    \item<6-> \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
  \end{itemize}
 \end{frame}
 
@@ -105,7 +107,7 @@
 % \end{table}
 
 
-   \begin{itemize}
+   \begin{itemize}[<+->]
     \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell / \log{\ell}})}$}} having the same number of samples $q$
     \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell / \log{ \log {\ell} } })}$}} having $q=poly(\ell)$ samples
     \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell})}$}} having $q= \mathcal{\varTheta}(\ell)$ samples
@@ -199,19 +201,19 @@ where $\ell$ is the security parameter
   \begin{columns}[c]
     \column{0.50\textwidth}
   \begin{itemize}
- \item<1> \alert<1,1>{ \textbf{Key Generation} }
- \item<2> \alert<2,2>{ \textbf{Key Assembly} }
- \item<3-5> \alert<3-5>{ \textbf{Encryption} }
- \item<6-10> \alert<6-10>{ \textbf{Partial Decryption} } 
- \item<11> \alert<11,11>{ \textbf{Finish Decryption} }
+ \item<1-2> \alert<1,2>{ \textbf{Key Generation} }
+ \item<3-4> \alert<3,4>{ \textbf{Key Assembly} }
+ \item<5-8> \alert<5-8>{ \textbf{Encryption} }
+ \item<9-14> \alert<9-14>{ \textbf{Partial Decryption} } 
+ \item<15,16> \alert<15,16>{ \textbf{Finish Decryption} }
  \end{itemize} 
     \column{0.50\textwidth}
 \begin{overprint}
- \onslide<1> \begin{center}\pgfuseimage{key_gen}\end{center}
- \onslide<2> \begin{center}\pgfuseimage{key_assembly}\end{center}
- \onslide<3-5> \begin{center}\pgfuseimage{enc}\end{center}
- \onslide<6-10> \begin{center}\pgfuseimage{part_dec}\end{center}
- \onslide<11> \begin{center}\pgfuseimage{finish}\end{center}
+ \onslide<1,2> \begin{center}\pgfuseimage{key_gen}\end{center}
+ \onslide<3,4> \begin{center}\pgfuseimage{key_assembly}\end{center}
+ \onslide<5-8> \begin{center}\pgfuseimage{enc}\end{center}
+ \onslide<9-14> \begin{center}\pgfuseimage{part_dec}\end{center}
+ \onslide<15,16> \begin{center}\pgfuseimage{finish}\end{center}
 \end{overprint}
 
 \end{columns}
@@ -220,7 +222,7 @@ where $\ell$ is the security parameter
 %  \column{0.5\textwidth}
  
    \begin{overprint}
- \onslide<1>
+ \onslide<2>
  \begin{block}{Key Generation}
   \begin{itemize}
    \item All the receivers share a matrix $\vect{A}  \R \Z^{q \times \ell}$
@@ -229,7 +231,7 @@ where $\ell$ is the security parameter
   \end{itemize}  
   \end{block}
   
- \onslide<2>
+ \onslide<4>
  \begin{block}{Key Assembly}  
   The combined public key is the pair $\left( \vect{A},\vect{b} \right)$, where 
   \[
@@ -239,7 +241,7 @@ where $\ell$ is the security parameter
 and $I$ is the users subset
   \end{block}
   
-	    \onslide<3>
+	    \onslide<6>
 	    \begin{figure}
 	    
 	    \begin{protocol}{2}
@@ -250,7 +252,7 @@ and $I$ is the users subset
 	    
 	    \end{figure}
 	    
-	    \onslide<4-5>	    
+	    \onslide<7>	    
 	    \begin{figure}
 	    
 	    \begin{protocol}{2}
@@ -267,7 +269,7 @@ and $I$ is the users subset
 	    \]
 	      \end{block}
 	    
-	    \onslide<5>
+	    \onslide<8>
 	    \begin{figure}
 	    \begin{protocol}{2}
 % 		\protocolheader{Encryption Phase}\\
@@ -281,7 +283,7 @@ and $I$ is the users subset
 	    \]
 	      \end{block}
 
-\onslide<6>
+\onslide<10>
 \begin{figure}
    
     \begin{protocol}{2}
@@ -294,7 +296,7 @@ and $I$ is the users subset
   
 \end{figure}
 
-\onslide<7>
+\onslide<11>
 \begin{figure}
    
     \begin{protocol}{2}
@@ -314,7 +316,7 @@ and $I$ is the users subset
 \end{block}
 
 
-\onslide<8>
+\onslide<12>
 \begin{figure}
   
     \begin{protocol}{2}
@@ -334,7 +336,7 @@ and $I$ is the users subset
 \end{block}
 
 
-\onslide<9>
+\onslide<13>
 \begin{figure}
   
     \begin{center}
@@ -358,7 +360,7 @@ and $I$ is the users subset
 
 
 
-\onslide<10>
+\onslide<14>
 \begin{figure}
   
     \begin{protocol}{2}
@@ -383,7 +385,7 @@ and $I$ is the users subset
  
 
 
- \onslide<11>
+ \onslide<16>
  \begin{block}{Finish decryption}
  \begin{itemize}
   \item Each receiver indipendently computes the vector 
@@ -492,20 +494,20 @@ and $I$ is the users subset
 \begin{frame}
 \frametitle{Commitment Protocols}
 \begin{block}{Commitment protocol}
- \begin{itemize}
+ \begin{itemize}[<+->]
   \item can be thought as the digital analogue of a sealed envelope
   \item \textbf{Commit: } the sender $\mathtt{S}$ commit to a message $m$ and the receiver $\mathtt{R}$ does not learn any information about $m$ (\alert{hiding} property)
   \item \textbf{Open: } $\mathtt{S}$ can choose to open the commitment and reveal the content $m$, but no other value (\alert{binding} property)
  \end{itemize}
 \end{block}
 
-
+\onslide<4->
 \begin{block}{\textbf{Our contribution}}
  We presented a {\color{red}{Commitment protocol}}
- \begin{itemize}
+ \begin{itemize}[<+->]
   \item based on the commitment protocol by \textit{Jain et al}
   \item based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=\lfloor \tau \cdot \ell \rceil$)
-  \item not in a \emph{common reference string (CRS)} model
+  \item does not need a trusted third party
  \end{itemize}
 \end{block}
 
@@ -521,7 +523,7 @@ and $I$ is the users subset
 \begin{block}{Setup Phase}
 In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$\\
 %We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
-We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.
+We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.\\
 Finally, we set $w = \lfloor\tau k\rceil$.
 \end{block}
 \begin{overprint}
@@ -720,13 +722,28 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
 
   \begin{block}{case $1)$ and $2)$ }
   Let \mbox{E = {the reduction breaks the Exact-$\LPN$ problem}},  
+  \begin{overprint}
+  \onslide<2>
+  \begin{equation*}
+     \Pr(E) = \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+  \end{equation*}
+
+  \onslide<3> 
   \begin{align*}
     \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
-	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} \gg 2^{-k}
+	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
+  \end{align*}
+
+  \onslide<4>
+  \begin{align*}
+    \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
   \end{align*}
   \begin{center}   
-      \alert{Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment}
-  \end{center}
+  \alert{Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment}
+  \end{center}  
+  \end{overprint}
+
   \end{block}
 
 \end{frame}

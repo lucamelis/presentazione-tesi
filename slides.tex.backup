@@ -48,7 +48,7 @@
 
 \begin{frame}
 \frametitle{Learning Parity with Noise Problem $\LPN$}
-\begin{itemize}
+\begin{itemize}[<+->]
  \item Dimension $\ell$ (security parameter), $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right]$
  \vspace*{5pt}
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
@@ -65,7 +65,7 @@
    {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
   \end{align*}
 
-  \onslide<4>
+  \onslide<4->
   \vspace*{15pt}
 \[
 {\color{blue} \vect{A}} = \begin{pmatrix}
@@ -78,10 +78,12 @@
   Errors $e_i \gets \Ber_{\tau}$, i.e. $\Pr(e_i=1)= \tau$
 \end{itemize}
 \vspace{5pt}
+
+\onslide<5->
   \begin{itemize}
-    \item \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$ 
+    \item<5-> \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{a_i}}, {\color{red}\vect{b_i}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{a_i}}, $ {\color{blue} $b_i$} $)$ 
 \vspace{5pt}
-    \item \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
+    \item<6-> \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
  \end{itemize}
 \end{frame}
 
@@ -105,7 +107,7 @@
 % \end{table}
 
 
-   \begin{itemize}
+   \begin{itemize}[<+->]
     \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell / \log{\ell}})}$}} having the same number of samples $q$
     \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell / \log{ \log {\ell} } })}$}} having $q=poly(\ell)$ samples
     \item {\color{blue}{$2^{\mathcal{\varTheta}(\mathcal{\ell})}$}} having $q= \mathcal{\varTheta}(\ell)$ samples
@@ -126,7 +128,10 @@ where $\ell$ is the security parameter
 
 \begin{frame}
 \frametitle{Threshold Public-Key Encryption schemes}
-\begin{block}{Public-key cryptography}
+
+\begin{center}\pgfuseimage{pke}\end{center}
+
+\begin{block}{Public-key cryptography}  
   \begin{itemize}
    \item the ability of decrypting or signing is restricted to the owner of the secret key.
    \item $\Rightarrow$ \alert{only one person has all the power} 
@@ -139,9 +144,9 @@ where $\ell$ is the security parameter
  \frametitle{Threshold Public-Key Encryption schemes}
  \begin{block}{Solution: Threshold PKE}
  \begin{itemize}
-  \item Shares trust among a group of users, such that \emph{enough} of them, the \emph{threshold}, is needed to sign or decrypt
   \item The secret key is split into shares and each share is given to a group of users.
- \end{itemize}  
+  \item users can decrypt or sign only if  enough cooperate
+  \end{itemize}  
  \end{block}
  
  \begin{block}{\textbf{Our contribution}}
@@ -491,21 +496,30 @@ and $I$ is the users subset
 
 \begin{frame}
 \frametitle{Commitment Protocols}
-\begin{block}{Commitment protocol}
+
+\begin{block}{Scenario}
  \begin{itemize}
-  \item can be thought as the digital analogue of a sealed envelope
-  \item \textbf{Commit: } the sender $\mathtt{S}$ commit to a message $m$ and the receiver $\mathtt{R}$ does not learn any information about $m$ (\alert{hiding} property)
-  \item \textbf{Open: } $\mathtt{S}$ can choose to open the commitment and reveal the content $m$, but no other value (\alert{binding} property)
+  \item Alice wants to keep a message secret from Bob for now but she wants to reveal her secret to Bob in the future
+  \item Alice \text{commits} her message to Bob  
  \end{itemize}
+
 \end{block}
 
+% \begin{block}{Commitment protocol}
+%  \begin{itemize}[<+->]
+%   \item can be thought as the digital analogue of a sealed envelope
+%   \item \textbf{Commit: } the sender $\mathtt{S}$ commit to a message $m$ and the receiver $\mathtt{R}$ does not learn any information about $m$ (\alert{hiding} property)
+%   \item \textbf{Open: } $\mathtt{S}$ can choose to open the commitment and reveal the content $m$, but no other value (\alert{binding} property)
+%  \end{itemize}
+% \end{block}
 
+\onslide<4->
 \begin{block}{\textbf{Our contribution}}
  We presented a {\color{red}{Commitment protocol}}
- \begin{itemize}
+ \begin{itemize}[<+->]
   \item based on the commitment protocol by \textit{Jain et al}
   \item based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=\lfloor \tau \cdot \ell \rceil$)
-  \item not in a \emph{common reference string (CRS)} model
+  \item does not need a trusted third party
  \end{itemize}
 \end{block}
 
@@ -521,7 +535,7 @@ and $I$ is the users subset
 \begin{block}{Setup Phase}
 In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$\\
 %We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
-We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.
+We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.\\
 Finally, we set $w = \lfloor\tau k\rceil$.
 \end{block}
 \begin{overprint}
@@ -721,16 +735,27 @@ $\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed co
   \begin{block}{case $1)$ and $2)$ }
   Let \mbox{E = {the reduction breaks the Exact-$\LPN$ problem}},  
   \begin{overprint}
-   
+  \onslide<2>
+  \begin{equation*}
+     \Pr(E) = \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+  \end{equation*}
+
+  \onslide<3> 
   \begin{align*}
     \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
-	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} \gg 2^{-k}
+	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
+  \end{align*}
+
+  \onslide<4>
+  \begin{align*}
+    \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
   \end{align*}
   \begin{center}   
+  \alert{Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment}
+  \end{center}  
   \end{overprint}
 
-      \alert{Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment}
-  \end{center}
   \end{block}
 
 \end{frame}

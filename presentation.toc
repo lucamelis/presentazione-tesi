@@ -1,4 +1,4 @@
-\beamer@endinputifotherversion {3.18pt}
+\beamer@endinputifotherversion {3.24pt}
 \select@language {english}
 \beamer@sectionintoc {1}{Introduzione}{2}{0}{1}
 \beamer@sectionintoc {2}{Learning Parity with Noise Problem $\mathrm {LPN}$}{8}{0}{2}

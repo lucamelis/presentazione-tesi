@@ -128,7 +128,10 @@ where $\ell$ is the security parameter
 
 \begin{frame}
 \frametitle{Threshold Public-Key Encryption schemes}
-\begin{block}{Public-key cryptography}
+
+\begin{center}\pgfuseimage{pke}\end{center}
+
+\begin{block}{Public-key cryptography}  
   \begin{itemize}
    \item the ability of decrypting or signing is restricted to the owner of the secret key.
    \item $\Rightarrow$ \alert{only one person has all the power} 
@@ -141,9 +144,9 @@ where $\ell$ is the security parameter
  \frametitle{Threshold Public-Key Encryption schemes}
  \begin{block}{Solution: Threshold PKE}
  \begin{itemize}
-  \item Shares trust among a group of users, such that \emph{enough} of them, the \emph{threshold}, is needed to sign or decrypt
   \item The secret key is split into shares and each share is given to a group of users.
- \end{itemize}  
+  \item users can decrypt or sign only if  enough cooperate
+  \end{itemize}  
  \end{block}
  
  \begin{block}{\textbf{Our contribution}}
@@ -493,13 +496,17 @@ and $I$ is the users subset
 
 \begin{frame}
 \frametitle{Commitment Protocols}
-\begin{block}{Commitment protocol}
- \begin{itemize}[<+->]
-  \item can be thought as the digital analogue of a sealed envelope
-  \item \textbf{Commit: } the sender $\mathtt{S}$ commit to a message $m$ and the receiver $\mathtt{R}$ does not learn any information about $m$ (\alert{hiding} property)
-  \item \textbf{Open: } $\mathtt{S}$ can choose to open the commitment and reveal the content $m$, but no other value (\alert{binding} property)
- \end{itemize}
+
+\begin{block}{Scenario:}
+ Alice wants to keep a message secret from Bob for now but she intends to reveal it to Bob at some time in the future
 \end{block}
+
+ \begin{block}{Commitment protocol}
+  \begin{itemize}[<+->] 
+   \item Alice \textbf{commits} the message and Bob does not learn any information about it (\alert{hiding} property)
+   \item Alice chooses to \textbf{open} the commitment and reveal the message, but she cannot change the value committed (\alert{binding} property)
+  \end{itemize}
+ \end{block}
 
 \onslide<4->
 \begin{block}{\textbf{Our contribution}}

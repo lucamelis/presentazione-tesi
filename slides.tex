@@ -501,20 +501,21 @@ and $I$ is the users subset
  Alice wants to keep a message secret from Bob for now but she intends to reveal it to Bob at some time in the future
 \end{block}
 
+\onslide<2->
  \begin{block}{Commitment protocol}
-  \begin{itemize}[<+->] 
-   \item Alice \textbf{commits} the message and Bob does not learn any information about it (\alert{hiding} property)
-   \item Alice chooses to \textbf{open} the commitment and reveal the message, but she cannot change the value committed (\alert{binding} property)
+  \begin{itemize}
+   \item<3-> Alice \textbf{commits} the message and Bob does not learn any information about it (\alert{hiding} property)
+   \item<4-> Alice chooses to \textbf{open} the commitment and reveal the message, but she cannot change the value committed (\alert{binding} property)
   \end{itemize}
  \end{block}
 
-\onslide<4->
+\onslide<5->
 \begin{block}{\textbf{Our contribution}}
  We presented a {\color{red}{Commitment protocol}}
- \begin{itemize}[<+->]
-  \item based on the commitment protocol by \textit{Jain et al}
-  \item based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=\lfloor \tau \cdot \ell \rceil$)
-  \item does not need a trusted third party
+ \begin{itemize}
+  \item<6-> based on the commitment protocol by \textit{Jain et al}
+  \item<7-> based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=\lfloor \tau \cdot \ell \rceil$)
+  \item<8-> does not need a trusted third party
  \end{itemize}
 \end{block}
 
@@ -533,6 +534,7 @@ In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$
 We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.\\
 Finally, we set $w = \lfloor\tau k\rceil$.
 \end{block}
+
 \begin{overprint}
 \onslide<2>
 \begin{figure}

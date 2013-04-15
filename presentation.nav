@@ -32,8 +32,30 @@
 \headcommand {\beamer@framepages {57}{60}}
 \headcommand {\slideentry {3}{0}{12}{61/64}{}{0}}
 \headcommand {\beamer@framepages {61}{64}}
+\headcommand {\partentry {Appendix}{1}}
 \headcommand {\beamer@partpages {1}{64}}
-\headcommand {\beamer@subsectionpages {22}{64}}
 \headcommand {\beamer@sectionpages {22}{64}}
-\headcommand {\beamer@documentpages {64}}
+\headcommand {\beamer@subsectionpages {22}{64}}
+\headcommand {\beamer@appendixpages {65}}
+\headcommand {\sectionentry {4}{Commitment Protocol}{65}{Commitment Protocol}{1}}
+\headcommand {\beamer@sectionpages {65}{64}}
+\headcommand {\beamer@subsectionpages {65}{64}}
+\headcommand {\slideentry {4}{0}{13}{65/72}{}{1}}
+\headcommand {\beamer@framepages {65}{72}}
+\headcommand {\slideentry {4}{0}{14}{73/77}{}{1}}
+\headcommand {\beamer@framepages {73}{77}}
+\headcommand {\slideentry {4}{0}{15}{78/81}{}{1}}
+\headcommand {\beamer@framepages {78}{81}}
+\headcommand {\slideentry {4}{0}{16}{82/82}{}{1}}
+\headcommand {\beamer@framepages {82}{82}}
+\headcommand {\slideentry {4}{0}{17}{83/83}{}{1}}
+\headcommand {\beamer@framepages {83}{83}}
+\headcommand {\slideentry {4}{0}{18}{84/89}{}{1}}
+\headcommand {\beamer@framepages {84}{89}}
+\headcommand {\slideentry {4}{0}{19}{90/93}{}{1}}
+\headcommand {\beamer@framepages {90}{93}}
+\headcommand {\beamer@partpages {65}{93}}
+\headcommand {\beamer@subsectionpages {65}{93}}
+\headcommand {\beamer@sectionpages {65}{93}}
+\headcommand {\beamer@documentpages {93}}
 \headcommand {\def \inserttotalframenumber {12}}

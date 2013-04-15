@@ -22,7 +22,7 @@
     \begin{enumerate}
      \item<4-> cryptographic assumptions broken by efficient quantum algorithms \\
 	  e.g. \emph{\textbf{factoring} and \textbf{discrete-logarithm} broken by Shor's algorithm}
-     \item<5-> proofs of security (or \textbf{reductions}) become unuseful 
+     \item<5-> proofs of security (or \emph{reduction}) become unuseful 
     \end{enumerate}
  \end{itemize}
 \end{block}
@@ -545,3 +545,13 @@ and $I$ is the users subset
  
 
 \end{frame}
+
+% All your regular slides
+% After your last numbered slide
+\appendix
+\newcounter{finalframe}
+\setcounter{finalframe}{\value{framenumber}}
+% Backup frames
+\input{commitment.tex}
+\setcounter{framenumber}{\value{finalframe}}
+

@@ -2,7 +2,10 @@
 
 \begin{frame}
  \frametitle{Scenario}
- 
+ \begin{center}
+  \pgfuseimage{crypto}
+ \end{center}
+
  \begin{block}{Cryptography schemes}
  \begin{itemize}
   \item address the security of communication across an insecure medium
@@ -18,7 +21,7 @@
     \begin{enumerate}
      \item<4-> cryptographic assumptions broken by efficient quantum algorithms \\
 	  e.g. \emph{\textbf{factoring} and \textbf{discrete-logarithm} broken by Shor's algorithm}
-     \item<5-> proof of security becomes unuseful (hypothesis is not valid)
+     \item<5-> proofs of security (or \textbf{reductions}) become unuseful 
     \end{enumerate}
  \end{itemize}
 \end{block}
@@ -27,13 +30,15 @@
 
 \begin{frame}
 \frametitle{Post-Quantum cryptography}
- Schemes that are believed to resist classical \& quantum computers
+
+Schemes that are believed to resist classical \& quantum computers
       \begin{itemize}
       \item \textbf{Code-based cryptography}
       \item \alert<2->{\textbf{Lattice-based cryptography}}
       \end{itemize}
  \onslide<2->
-\vspace{10pt}
+
+ \vspace{10pt}
  \begin{block}{\textbf{Our contribution}}
  \begin{itemize}
   \item<2-> We investigate about the \alert{Learning Parity with Noise} ($\LPN$) problem
@@ -197,11 +202,20 @@ where $\ell$ is the security parameter
   
  \end{figure}
  
-\onslide<3->
+\begin{overprint}
+\onslide<3>
+ \begin{block}{\textbf{Decryption}}
+ The receiver $\mathtt{R}$ computes $d = c \xor \langle \vect{s},\vect{u} \rangle$ 
+\end{block}
+
+\onslide<4>
  \begin{block}{\textbf{Decryption}}
  The receiver $\mathtt{R}$ computes $d = c \xor \langle \vect{s},\vect{u} \rangle = 
  \dots = \langle  \vect{f} , \vect{e} \rangle \xor m$ \\ 
 \end{block}
+
+\end{overprint}
+
 \end{frame}
 
 \begin{frame}
@@ -209,19 +223,19 @@ where $\ell$ is the security parameter
   \begin{columns}[c]
     \column{0.50\textwidth}
   \begin{itemize}
- \item<1-4> \alert<1-4>{ \textbf{Key Generation} }
- \item<5-6> \alert<5-6>{ \textbf{Key Assembly} }
- \item<7-9> \alert<7-9>{ \textbf{Encryption} }
- \item<11-16> \alert<9-14>{ \textbf{Partial Decryption} } 
- \item<15-17> \alert<15-17>{ \textbf{Finish Decryption} }
+ \item<1-5> \alert<1-5>{ \textbf{Key Generation} }
+ \item<6-7> \alert<6-7>{ \textbf{Key Assembly} }
+ \item<8-11> \alert<8-11>{ \textbf{Encryption} }
+ \item<12-17> \alert<12-17>{ \textbf{Partial Decryption} } 
+ \item<18-20> \alert<18-20>{ \textbf{Finish Decryption} }
  \end{itemize} 
     \column{0.50\textwidth}
 \begin{overprint}
- \onslide<1,2> \begin{center}\pgfuseimage{key_gen}\end{center}
- \onslide<3,4> \begin{center}\pgfuseimage{key_assembly}\end{center}
- \onslide<5-8> \begin{center}\pgfuseimage{enc}\end{center}
- \onslide<9-14> \begin{center}\pgfuseimage{part_dec}\end{center}
- \onslide<15-17> \begin{center}\pgfuseimage{finish}\end{center}
+ \onslide<1-5> \begin{center}\pgfuseimage{key_gen}\end{center}
+ \onslide<6,7> \begin{center}\pgfuseimage{key_assembly}\end{center}
+ \onslide<8-11> \begin{center}\pgfuseimage{enc}\end{center}
+ \onslide<12-17> \begin{center}\pgfuseimage{part_dec}\end{center}
+ \onslide<18-20> \begin{center}\pgfuseimage{finish}\end{center}
 \end{overprint}
 
 \end{columns}
@@ -230,16 +244,16 @@ where $\ell$ is the security parameter
 %  \column{0.5\textwidth}
  
    \begin{overprint}
- \onslide<3-4>
+ \onslide<3-5>
  \begin{block}{Key Generation}
-  \begin{itemize}[<+->]
-   \item All the receivers share a matrix $\vect{A}  \R \Z^{q \times \ell}$
-   \item Each receiver $\mathtt{R_i}$ \alert{indipendently} choose a secret key $\vect{s_i} \R \zol$ and an error $\vect{e_i} \gets \Ber_{\tau}^{q}$
-   \item the public key for $\mathtt{R_i}$ is the pair $\left( \vect{A},\vect{b_i}=\vect{A}\vect{s_i} \xor \vect{e_i} \right)$
+  \begin{itemize}
+   \item<3-> All the receivers share a matrix $\vect{A}  \R \Z^{q \times \ell}$
+   \item<4-> Each receiver $\mathtt{R_i}$ \alert{indipendently} choose a secret key $\vect{s_i} \R \zol$ and an error $\vect{e_i} \gets \Ber_{\tau}^{q}$
+   \item<5-> the public key for $\mathtt{R_i}$ is the pair $\left( \vect{A},\vect{b_i}=\vect{A}\vect{s_i} \xor \vect{e_i} \right)$
   \end{itemize}  
   \end{block}
   
- \onslide<6>
+ \onslide<7>
  \begin{block}{Key Assembly}  
   The combined public key is the pair $\left( \vect{A},\vect{b} \right)$, where 
   \[
@@ -249,7 +263,7 @@ where $\ell$ is the security parameter
 and $I$ is the users subset
   \end{block}
   
-	    \onslide<8>
+	    \onslide<9>
 	    \begin{figure}
 	    
 	    \begin{protocol}{2}
@@ -260,7 +274,7 @@ and $I$ is the users subset
 	    
 	    \end{figure}
 	    
-	    \onslide<9>	    
+	    \onslide<10>	    
 	    \begin{figure}
 	    
 	    \begin{protocol}{2}
@@ -277,7 +291,7 @@ and $I$ is the users subset
 	    \]
 	      \end{block}
 	    
-	    \onslide<10>
+	    \onslide<11>
 	    \begin{figure}
 	    \begin{protocol}{2}
 % 		\protocolheader{Encryption Phase}\\
@@ -291,7 +305,7 @@ and $I$ is the users subset
 	    \]
 	      \end{block}
 
-\onslide<12>
+\onslide<13>
 \begin{figure}
    
     \begin{protocol}{2}
@@ -304,7 +318,7 @@ and $I$ is the users subset
   
 \end{figure}
 
-\onslide<13>
+\onslide<14>
 \begin{figure}
    
     \begin{protocol}{2}
@@ -324,7 +338,7 @@ and $I$ is the users subset
 \end{block}
 
 
-\onslide<14>
+\onslide<15>
 \begin{figure}
   
     \begin{protocol}{2}
@@ -344,7 +358,7 @@ and $I$ is the users subset
 \end{block}
 
 
-\onslide<15>
+\onslide<16>
 \begin{figure}
   
     \begin{center}
@@ -368,7 +382,7 @@ and $I$ is the users subset
 
 
 
-\onslide<16>
+\onslide<17>
 \begin{figure}
   
     \begin{protocol}{2}
@@ -393,15 +407,15 @@ and $I$ is the users subset
  
 
 
- \onslide<18->
+ \onslide<19->
  \begin{block}{Finish decryption}
  \begin{itemize}
-  \item<18-> Each receiver indipendently computes the vector 
+  \item<19-> Each receiver indipendently computes the vector 
  \begin{eqnarray*}
  \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
  	  =  \vect{F}\cdot \vect{e} \xor \underbrace{\begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix}}_{q} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
  \end{eqnarray*}
- \item<19> the bit in the vector $\vect{d}$ that is in majority is separately chosen by each receiver as the plaintext $m$
+ \item<20> the bit in the vector $\vect{d}$ that is in majority is separately chosen by each receiver as the plaintext $m$
  \end{itemize}
  \end{block}
  
@@ -492,289 +506,25 @@ and $I$ is the users subset
  
 \end{frame}
 
-\section{Commitment Protocol}
 
-\begin{frame}
-\frametitle{Commitment Protocols}
-
-\begin{block}{Scenario:}
- Alice wants to keep a message secret from Bob for now but she intends to reveal it to Bob at some time in the future
-\end{block}
-
-\onslide<2->
- \begin{block}{Commitment protocol}
-  \begin{itemize}
-   \item<3-> Alice \textbf{commits} the message and Bob does not learn any information about it (\alert{hiding} property)
-   \item<4-> Alice chooses to \textbf{open} the commitment and reveal the message, but she cannot change the value committed (\alert{binding} property)
-  \end{itemize}
- \end{block}
-
-\onslide<5->
-\begin{block}{\textbf{Our contribution}}
- We presented a {\color{red}{Commitment protocol}}
- \begin{itemize}
-  \item<6-> based on the commitment protocol by \textit{Jain et al}
-  \item<7-> based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=\lfloor \tau \cdot \ell \rceil$)
-  \item<8-> does not need a trusted third party
- \end{itemize}
-\end{block}
-
-
-\end{frame}
-
-
-
-\begin{frame}
-\frametitle{The commitment protocol by \textit{Jain et al}} 
-
-\onslide<1->
-\begin{block}{Setup Phase}
-In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$\\
-%We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
-We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.\\
-Finally, we set $w = \lfloor\tau k\rceil$.
-\end{block}
-
-\begin{overprint}
-\onslide<2>
-\begin{figure}
-    \begin{protocol}{2}
-    \protocolheader{\textbf{Commitment phase}}\\
-    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
-     \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
-     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \phantom{\sends{\vect{c}}}\\
-    \end{protocol}
-\end{figure}
-\onslide<3->
-\begin{figure}
-    \begin{protocol}{2}
-    \protocolheader{\textbf{Commitment phase}}\\
-    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
-     \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
-     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \sends{\vect{c}}\\
-    \end{protocol}
-\end{figure}
-
-\end{overprint}
-
-\begin{overprint}
- \onslide<4>
- \begin{figure}
-   \begin{protocol}{2}
-    \protocolheader{\textbf{Opening phase}}\\
-   % \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
-     \mbox{define $ \vect{d} = \left( \vect{m'},\vect{r'} \right) $} & \sends{\vect{d}}  \\
-    & & \phantom{\mbox{computes $\vect{e'}=\vect{c} \xor \vect{A}\left( \vect{r'} \| \vect{m'} \right)$}}\\
-    & \phantom{\receives{ {Yes , No}}} & \phantom{\mbox{accepts iff $\vect{wt}(\vect{e'})= w$}} \\
-   \end{protocol} 
- \end{figure}
- 
- \onslide<5>
- \begin{figure}
-   \begin{protocol}{2}
-    \protocolheader{\textbf{Opening phase}}\\
-   % \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
-     \mbox{define $\vect{d} = \left( \vect{m'},\vect{r'} \right) $} & \sends{\vect{d}}  \\
-    & & \mbox{computes $\vect{e'}=\vect{c} \xor \vect{A}\left( \vect{r'} \| \vect{m'} \right)$}\\
-    & \receives{ {Yes , No}} & \mbox{accepts iff $\vect{wt}(\vect{e'})= w$} \\
-   \end{protocol} 
- \end{figure}
- 
-
- 
-\end{overprint}
-
- 
-  \end{frame}
-  
-\begin{frame}
-\frametitle{Proposed commitment protocol}
-
- \begin{block}{\alert{Problem}}
-  We need a trusted third party for the common matrix $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right]$
- \end{block}
- 
-\onslide<2-> 
-\begin{block}{Solution:}
-
-\begin{overprint}
- 
-\onslide<2->
-\begin{figure}
-    \begin{protocol}{2}
-    \protocolheader{\textbf{Setup phase}}\\
-    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
-      \mbox{chooses $\vect{A'} \R \Z^{k \times \ell}$} & \sends{\vect{A'}} \\ 
-      & \phantom{\receives{\vect{A''}}} & \phantom{\mbox{chooses $\vect{A''} \R \Z^{k \times v}$ }} \\
-    \end{protocol}
-\end{figure}
-
-\onslide<3->
-\begin{figure}
-    \begin{protocol}{2}
-    \protocolheader{\textbf{Setup phase}}\\
-    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
-      \mbox{chooses $\vect{A'} \R \Z^{k \times \ell}$} & \sends{\vect{A'}} \\ 
-      & \receives{\vect{A''}} & \mbox{chooses $\vect{A''} \R \Z^{k \times v}$ } \\
-    \end{protocol}
-\end{figure}
-\end{overprint}
-
-\end{block}
-\onslide<4>
-The Commitment and Opening phases are the same as in the original scheme 
-
-
-\end{frame}
-
-\begin{frame}
-\frametitle{The commitment protocol: a $\LPN$-based variant}
-\begin{block}{$\LPN$ variant}
-\begin{itemize}
- \item security directly based on the standard $\LPN$ problem
- \item \textbf{Commit phase:} we set $w'= 2 \cdot \lfloor\tau k\rceil$ and we choose $\vect{e}$ such that $\vect{wt}(\vect{e}) \leq w'$
- \end{itemize}
-
-\end{block}
-
-
-\begin{block}{Choice of parameters}
-According to
-\begin{center}
-\begin{thebibliography}{XX}
-   			\bibitem{LFP:06} 
-   			 \textbf{Levieil, \'Eric and Fouque, Pierre-Alain}
-  			 \newblock An Improved LPN Algorithm
-   				\newblock \emph{Springer Berlin Heidelberg}, 2006
-			\end{thebibliography} 
-\end{center}
-
-we choose $\ell=768$ and noise rate $\tau = \frac{1}{8}$ $\Rightarrow$ $2^{90}$ bytes of memory to solve $\LPN$
-\end{block}
-
-\begin{theorem}
-Our commitment scheme is statistically binding and computationally hiding 
-\end{theorem}
-
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Proof}
-\begin{block}{Statistically binding}
- even if $\mathtt{S}$ is computationally unbounded she cannot cheat with probability greater than $2^{-k}$
-\end{block}
-
-\begin{block}{Computationally hiding}
- \begin{itemize}
-  \item proof for reduction (single bit message)
-  \item we assume that $\mathcal{A}$ is able to break the commitment scheme
-  \begin{center}\pgfuseimage{adversary}\end{center}
-  \item Let $\mathcal{B}$ an oracle 
-  \begin{columns}[c]
-    \column{0.50\textwidth}
-   \begin{center}
-    \pgfuseimage{oracle}
-   \end{center}
-
-     \column{0.50\textwidth}
-where $\vect{b} = \begin{cases}
-		      \mbox{random} & w.p. \: 1/2 \\
-		      \vect{A'}\vect{s} \xor \vect{e} & w.p. \: 1/2
-                  \end{cases}$
-  \end{columns}
-
-  \begin{center} \hspace{1.5cm} 
-\end{center}
- \end{itemize}
-
-\end{block}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Proof}
-
-\begin{overprint}
- \onslide<1>\begin{center}\pgfuseimage{0}\end{center}
- \onslide<2>\begin{center}\pgfuseimage{1}\end{center}
- \onslide<3>\begin{center}\pgfuseimage{2}\end{center}
- \onslide<4>\begin{center}\pgfuseimage{3}\end{center} 
- \onslide<5>\begin{center}\pgfuseimage{4}\end{center}
- \onslide<6>\begin{center}\pgfuseimage{5}\end{center}
- \end{overprint}
- 
- \begin{overprint}
- \onslide<5>
-\begin{block}{case $1)$  }
-$\vect{b}$ is random $\Rightarrow$ $\vect{c} = \vect{b} \xor \vect{A''}m$ is a \alert{onetime-pad} encryption\\
-\centering $\Rightarrow$ $\mathcal{A}$ guesses w.p. $\frac{1}{2}$\\
-\end{block}
-
-\onslide<6>
-\begin{block}{case $2)$  }
-$\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed commitment\\
-\centering  $\Rightarrow$ $\mathcal{A}$ guesses w.p. $1$ (by hypothesis)\\ 
-\end{block}
-
-\end{overprint}
-
-\end{frame}
-
-\begin{frame}
-\frametitle{Proof}
-
-  \begin{center}
-  \pgfdeclareimage[height=3.5cm]{3}{images/proof_3}
-  \pgfuseimage{3}
-  \end{center}
-
-  \begin{block}{case $1)$ and $2)$ }
-  Let \mbox{E = {the reduction breaks the Exact-$\LPN$ problem}},  
-  \begin{overprint}
-  \onslide<2>
-  \begin{equation*}
-     \Pr(E) = \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
-  \end{equation*}
-
-  \onslide<3> 
-  \begin{align*}
-    \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
-	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
-  \end{align*}
-
-  \onslide<4>
-  \begin{align*}
-    \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
-	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
-  \end{align*}
-  \begin{center}   
-  \alert{Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment}
-  \end{center}  
-  \end{overprint}
-
-  \end{block}
-
-\end{frame}
-
- 
 \begin{frame}
  \frametitle{Conclusions and Open Problems}
  
  \begin{block}{Our contribution}
 \begin{itemize}
  \item study the security of our Threshold Public-Key Encryption scheme in the \emph{malicious model}
- \item find statistically hiding commitments
- \item find efficient statistically binding commitments
+%  \item find statistically hiding commitments
+%  \item find efficient statistically binding commitments
 \end{itemize}
   
  \end{block}
-
+ 
+\onslide<2->
  \begin{block}{$\LPN$ open problems}
   \begin{itemize}
-   \item relation between standard $\LPN$ and some variants
-   \item Does $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? Is there a threshold?
-   \item how to get some basic primitives from standard $\LPN$?
+   \item<2-> relation between standard $\LPN$ and some variants
+   \item<3-> Does $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? Is there a threshold?
+   \item<4-> how to get some basic primitives from standard $\LPN$?
   \end{itemize}
 
  \end{block}

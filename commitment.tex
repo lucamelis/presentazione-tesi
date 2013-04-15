@@ -1,0 +1,267 @@
+
+\section{Commitment Protocol}
+
+\begin{frame}
+\frametitle{Commitment Protocols}
+
+\begin{block}{Scenario:}
+ Alice wants to keep a message secret from Bob for now but she intends to reveal it to Bob at some time in the future
+\end{block}
+
+\onslide<2->
+ \begin{block}{Commitment protocol}
+  \begin{itemize}
+   \item<3-> Alice \textbf{commits} the message and Bob does not learn any information about it (\alert{hiding} property)
+   \item<4-> Alice chooses to \textbf{open} the commitment and reveal the message, but she cannot change the value committed (\alert{binding} property)
+  \end{itemize}
+ \end{block}
+
+\onslide<5->
+\begin{block}{\textbf{Our contribution}}
+ We presented a {\color{red}{Commitment protocol}}
+ \begin{itemize}
+  \item<6-> based on the commitment protocol by \textit{Jain et al}
+  \item<7-> based on Exact-$\LPN$ problem (where $\mathbf{wt}(\vect{e})=\lfloor \tau \cdot \ell \rceil$)
+  \item<8-> does not need a trusted third party
+ \end{itemize}
+\end{block}
+
+
+\end{frame}
+
+
+
+\begin{frame}
+\frametitle{The commitment protocol by \textit{Jain et al}} 
+
+\onslide<1->
+\begin{block}{Setup Phase}
+In order to commit a message $\vect{m} \in \zok$ where $k \in \Theta (\ell + v)$\\
+%We let $\vect{A'} \R \Z^{k \times \ell}$ and $\vect{A''} \R \Z^{k \times v}$.
+We state $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right] \in \Z^{k \times (\ell + v)}$ as \alert{the common reference string (CRS)}.\\
+Finally, we set $w = \lfloor\tau k\rceil$.
+\end{block}
+
+\begin{overprint}
+\onslide<2>
+\begin{figure}
+    \begin{protocol}{2}
+    \protocolheader{\textbf{Commitment phase}}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+     \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
+     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \phantom{\sends{\vect{c}}}\\
+    \end{protocol}
+\end{figure}
+\onslide<3->
+\begin{figure}
+    \begin{protocol}{2}
+    \protocolheader{\textbf{Commitment phase}}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+     \mbox{chooses $\vect{r} \R \zo^\ell$, $\vect{e} \in \zo^k$ s.t. $\vect{wt}(\vect{e})=w$} & & \\ 
+     \mbox{computes $\vect{c}=\vect{A}(\vect{r} \| \vect{m}) \xor \vect{e}$} & \sends{\vect{c}}\\
+    \end{protocol}
+\end{figure}
+
+\end{overprint}
+
+\begin{overprint}
+ \onslide<4>
+ \begin{figure}
+   \begin{protocol}{2}
+    \protocolheader{\textbf{Opening phase}}\\
+   % \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+     \mbox{define $ \vect{d} = \left( \vect{m'},\vect{r'} \right) $} & \sends{\vect{d}}  \\
+    & & \phantom{\mbox{computes $\vect{e'}=\vect{c} \xor \vect{A}\left( \vect{r'} \| \vect{m'} \right)$}}\\
+    & \phantom{\receives{ {Yes , No}}} & \phantom{\mbox{accepts iff $\vect{wt}(\vect{e'})= w$}} \\
+   \end{protocol} 
+ \end{figure}
+ 
+ \onslide<5>
+ \begin{figure}
+   \begin{protocol}{2}
+    \protocolheader{\textbf{Opening phase}}\\
+   % \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+     \mbox{define $\vect{d} = \left( \vect{m'},\vect{r'} \right) $} & \sends{\vect{d}}  \\
+    & & \mbox{computes $\vect{e'}=\vect{c} \xor \vect{A}\left( \vect{r'} \| \vect{m'} \right)$}\\
+    & \receives{ {Yes , No}} & \mbox{accepts iff $\vect{wt}(\vect{e'})= w$} \\
+   \end{protocol} 
+ \end{figure}
+ 
+
+ 
+\end{overprint}
+
+ 
+  \end{frame}
+  
+\begin{frame}
+\frametitle{Proposed commitment protocol}
+
+ \begin{block}{\alert{Problem}}
+  We need a trusted third party for the common matrix $\vect{A}= \left[ \vect{A'} \lVert \vect{A''} \right]$
+ \end{block}
+ 
+\onslide<2-> 
+\begin{block}{Solution:}
+
+\begin{overprint}
+ 
+\onslide<2->
+\begin{figure}
+    \begin{protocol}{2}
+    \protocolheader{\textbf{Setup phase}}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+      \mbox{chooses $\vect{A'} \R \Z^{k \times \ell}$} & \sends{\vect{A'}} \\ 
+      & \phantom{\receives{\vect{A''}}} & \phantom{\mbox{chooses $\vect{A''} \R \Z^{k \times v}$ }} \\
+    \end{protocol}
+\end{figure}
+
+\onslide<3->
+\begin{figure}
+    \begin{protocol}{2}
+    \protocolheader{\textbf{Setup phase}}\\
+    \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}   \\
+      \mbox{chooses $\vect{A'} \R \Z^{k \times \ell}$} & \sends{\vect{A'}} \\ 
+      & \receives{\vect{A''}} & \mbox{chooses $\vect{A''} \R \Z^{k \times v}$ } \\
+    \end{protocol}
+\end{figure}
+\end{overprint}
+
+\end{block}
+\onslide<4>
+The Commitment and Opening phases are the same as in the original scheme 
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{The commitment protocol: a $\LPN$-based variant}
+\begin{block}{$\LPN$ variant}
+\begin{itemize}
+ \item security directly based on the standard $\LPN$ problem
+ \item \textbf{Commit phase:} we set $w'= 2 \cdot \lfloor\tau k\rceil$ and we choose $\vect{e}$ such that $\vect{wt}(\vect{e}) \leq w'$
+ \end{itemize}
+
+\end{block}
+
+
+\begin{block}{Choice of parameters}
+According to
+\begin{center}
+\begin{thebibliography}{XX}
+   			\bibitem{LFP:06} 
+   			 \textbf{Levieil, \'Eric and Fouque, Pierre-Alain}
+  			 \newblock An Improved LPN Algorithm
+   				\newblock \emph{Springer Berlin Heidelberg}, 2006
+			\end{thebibliography} 
+\end{center}
+
+we choose $\ell=768$ and noise rate $\tau = \frac{1}{8}$ $\Rightarrow$ $2^{90}$ bytes of memory to solve $\LPN$
+\end{block}
+
+\begin{theorem}
+Our commitment scheme is statistically binding and computationally hiding 
+\end{theorem}
+
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof}
+\begin{block}{Statistically binding}
+ even if $\mathtt{S}$ is computationally unbounded she cannot cheat with probability greater than $2^{-k}$
+\end{block}
+
+\begin{block}{Computationally hiding}
+ \begin{itemize}
+  \item proof for reduction (single bit message)
+  \item we assume that $\mathcal{A}$ is able to break the commitment scheme
+  \begin{center}\pgfuseimage{adversary}\end{center}
+  \item Let $\mathcal{B}$ an oracle 
+  \begin{columns}[c]
+    \column{0.50\textwidth}
+   \begin{center}
+    \pgfuseimage{oracle}
+   \end{center}
+
+     \column{0.50\textwidth}
+where $\vect{b} = \begin{cases}
+		      \mbox{random} & w.p. \: 1/2 \\
+		      \vect{A'}\vect{s} \xor \vect{e} & w.p. \: 1/2
+                  \end{cases}$
+  \end{columns}
+
+  \begin{center} \hspace{1.5cm} 
+\end{center}
+ \end{itemize}
+
+\end{block}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof}
+
+\begin{overprint}
+ \onslide<1>\begin{center}\pgfuseimage{0}\end{center}
+ \onslide<2>\begin{center}\pgfuseimage{1}\end{center}
+ \onslide<3>\begin{center}\pgfuseimage{2}\end{center}
+ \onslide<4>\begin{center}\pgfuseimage{3}\end{center} 
+ \onslide<5>\begin{center}\pgfuseimage{4}\end{center}
+ \onslide<6>\begin{center}\pgfuseimage{5}\end{center}
+ \end{overprint}
+ 
+ \begin{overprint}
+ \onslide<5>
+\begin{block}{case $1)$  }
+$\vect{b}$ is random $\Rightarrow$ $\vect{c} = \vect{b} \xor \vect{A''}m$ is a \alert{onetime-pad} encryption\\
+\centering $\Rightarrow$ $\mathcal{A}$ guesses w.p. $\frac{1}{2}$\\
+\end{block}
+
+\onslide<6>
+\begin{block}{case $2)$  }
+$\vect{b}$ is a Exact-$\LPN$ sample $\Rightarrow$ $\vect{c}$ is a well formed commitment\\
+\centering  $\Rightarrow$ $\mathcal{A}$ guesses w.p. $1$ (by hypothesis)\\ 
+\end{block}
+
+\end{overprint}
+
+\end{frame}
+
+\begin{frame}
+\frametitle{Proof}
+
+  \begin{center}
+  \pgfdeclareimage[height=3.5cm]{3}{images/proof_3}
+  \pgfuseimage{3}
+  \end{center}
+
+  \begin{block}{case $1)$ and $2)$ }
+  Let \mbox{E = {the reduction breaks the Exact-$\LPN$ problem}},  
+  \begin{overprint}
+  \onslide<2>
+  \begin{equation*}
+     \Pr(E) = \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+  \end{equation*}
+
+  \onslide<3> 
+  \begin{align*}
+    \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
+  \end{align*}
+
+  \onslide<4>
+  \begin{align*}
+    \Pr(E) &= \Pr \left( E | \:\vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  \cdot  \Pr \left( \vect{b}  = \vect{A'} \vect{s} \xor \vect{e}  \right)  + \Pr \left( E   | \: \vect{b} \text{ is random}  \right)   \cdot \Pr \left(   \vect{b} \text{ is random} \right) \\
+	  &=  1  \cdot   \frac{1}{2}  +  \frac{1}{2}  \cdot  \frac{1}{2} = \frac{3}{4} 
+  \end{align*}
+  \begin{center}   
+  \alert{Exact-$\LPN$ hardness $\Rightarrow$ Hiding commitment}
+  \end{center}  
+  \end{overprint}
+
+  \end{block}
+
+\end{frame}
+
+ 

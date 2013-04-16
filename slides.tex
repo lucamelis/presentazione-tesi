@@ -131,7 +131,7 @@ where $\ell$ is the security parameter
   \begin{block}{Interesting features}
     \begin{itemize}
       \item<4-> \textbf{Efficiency} $\Rightarrow$ suitable for limited computing power devices (e.g. RFID).
-      \item<5-> \textbf{quantum algorithm resistance}
+      \item<5-> \textbf{Quantum algorithms resistance}
     \end{itemize}
   \end{block}
 
@@ -146,7 +146,7 @@ where $\ell$ is the security parameter
 
 \begin{block}{Public-key cryptography}  
   \begin{itemize}
-   \item<1-> the ability of decrypting or signing is restricted to the owner of the secret key.
+   \item<1-> The ability of decrypting or signing is restricted to the owner of the secret key.
    \item<2-> $\Rightarrow$ \alert{only one person has all the power} 
   \end{itemize}  
  \end{block}
@@ -158,7 +158,7 @@ where $\ell$ is the security parameter
  \begin{block}{Solution: Threshold PKE}
  \begin{itemize}[<+->]
   \item The secret key is split into shares and each share is given to a group of users.
-  \item users can decrypt or sign only if enough, a \emph{threshold}, cooperate
+  \item Users can decrypt or sign only if enough, a \emph{threshold}, cooperate
   \end{itemize}  
  \end{block}
  
@@ -233,7 +233,7 @@ where $\ell$ is the security parameter
  \item<6-7> \alert<6-7>{ \textbf{Key Assembly} }
  \item<8-11> \alert<8-11>{ \textbf{Encryption} }
  \item<12-17> \alert<12-17>{ \textbf{Partial Decryption} } 
- \item<18-21> \alert<18-21>{ \textbf{Finish Decryption} }
+ \item<18-20> \alert<18-20>{ \textbf{Finish Decryption} }
  \end{itemize} 
     \column{0.50\textwidth}
 \begin{overprint}
@@ -241,7 +241,7 @@ where $\ell$ is the security parameter
  \onslide<6,7> \begin{center}\pgfuseimage{key_assembly}\end{center}
  \onslide<8-11> \begin{center}\pgfuseimage{enc}\end{center}
  \onslide<12-17> \begin{center}\pgfuseimage{part_dec}\end{center}
- \onslide<18-21> \begin{center}\pgfuseimage{finish}\end{center}
+ \onslide<18-20> \begin{center}\pgfuseimage{finish}\end{center}
 \end{overprint}
 
 \end{columns}
@@ -293,7 +293,7 @@ and $I$ is the users subset
 
 	    \begin{block}{Encryption function (Alekhnovich scheme)}
 	    \[
-	    \vect{C_1} &= \vect{F} \cdot \vect{A}, \: \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \underbrace{\begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix}}_{q} \cdot m \mbox{ \qquad where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$}
+	    \vect{C_1} &= \vect{F} \cdot \vect{A}, \: \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \mbox{ \qquad where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \vdots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$}
 	    \]
 	      \end{block}
 	    
@@ -307,7 +307,7 @@ and $I$ is the users subset
 	    \end{figure}
 	    \begin{block}{Encryption function (Alekhnovich scheme)}
 	    \[
-	    \vect{C_1} &= \vect{F} \cdot \vect{A}, \: \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \underbrace{\begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix}}_{q} \cdot m \mbox{ \qquad where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \dots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$}
+	    \vect{C_1} &= \vect{F} \cdot \vect{A}, \: \vect{c_2} &= \vect{F} \cdot \vect{b} \xor \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \mbox{ \qquad where $\vect{F} := \begin{bmatrix} \vect{f_1} \\ \vdots \\ \vect{f_q} \end{bmatrix}$, $\vect{f_i} \gets \Ber_{\tau}^{q}$}
 	    \]
 	      \end{block}
 
@@ -416,7 +416,7 @@ and $I$ is the users subset
  \onslide<19->
  \begin{block}{Finish decryption}
  \begin{itemize}
-  \item<19-> Each receiver indipendently computes the vector 
+  \item<19-> Each receiver \alert{indipendently} computes the vector 
  
 %  \onslide<19>
 %  \begin{eqnarray*}
@@ -426,10 +426,10 @@ and $I$ is the users subset
 %  \onslide<20->
  \begin{eqnarray*}
  \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
- 	  =  \vect{F}\cdot \vect{e} \xor \underbrace{\begin{bmatrix} 1 \\ \dots \\ 1 \end{bmatrix}}_{q} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
+ 	  = \dots = \: \vect{F}\cdot \vect{e} \xor \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
  \end{eqnarray*}
  
- \item<21> the bit in the vector $\vect{d}$ that is in majority is separately chosen by each receiver as the plaintext $m$
+ \item<20> the bit in $\vect{d}$ that is in majority is separately chosen by each receiver as $m$
  \end{itemize}
  \end{block}
  

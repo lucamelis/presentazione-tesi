@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.2.10)  15 APR 2013 16:43
+This is pdfTeX, Version 3.1415926-2.4-1.40.13 (TeX Live 2012/Arch Linux) (format=pdflatex 2013.2.10)  15 APR 2013 20:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -2045,7 +2045,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [33
@@ -2236,7 +2236,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [34
@@ -2427,7 +2427,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [35
@@ -2618,7 +2618,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [36
@@ -2809,7 +2809,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [37
@@ -3000,7 +3000,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [38
@@ -3191,7 +3191,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [39
@@ -3382,7 +3382,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [40
@@ -3573,7 +3573,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [41
@@ -3764,7 +3764,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [42
@@ -3955,7 +3955,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [43
@@ -4146,7 +4146,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [44
@@ -4337,7 +4337,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [45
@@ -4528,7 +4528,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [46
@@ -4719,7 +4719,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [47
@@ -4910,7 +4910,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [48
@@ -5101,7 +5101,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.41472pt too high) detected at line 442
+Overfull \vbox (8.86368pt too high) detected at line 442
  []
 
 [49
@@ -5292,7 +5292,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.22029pt too high) detected at line 442
+Overfull \vbox (8.66925pt too high) detected at line 442
  []
 
 [50
@@ -5483,7 +5483,7 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.22029pt too high) detected at line 442
+Overfull \vbox (8.66925pt too high) detected at line 442
  []
 
 [51
@@ -5674,201 +5674,12 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
  []
 
 
-Overfull \vbox (4.22029pt too high) detected at line 442
+Overfull \vbox (8.66925pt too high) detected at line 442
  []
 
 [52
 
-]
-
-! LaTeX Error: There's no line here to end.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.442 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.442 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Display math should end with $$.
-<to be read again> 
-                   \par 
-l.442 \end{frame}
-                 
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-! LaTeX Error: Bad math environment delimiter.
-
-See the LaTeX manual or LaTeX Companion for explanation.
-Type  H <return>  for immediate help.
- ...                                              
-                                                  
-l.442 \end{frame}
-                 
-Your command was ignored.
-Type  I <command> <return>  to replace it with another command,
-or  <return>  to continue without it.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.442 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Display math should end with $$.
-<to be read again> 
-                   \endgroup 
-l.442 \end{frame}
-                 
-The `$' that I just saw supposedly matches a previous `$$'.
-So I shall assume that you typed `$$' both times.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-! Misplaced alignment tab character &.
-\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
-                                                  = \vect {F} \cdot \vect {A...
-l.442 \end{frame}
-                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
-                                                  = \vect {F} \cdot \vect {b...
-l.442 \end{frame}
-                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-! Misplaced alignment tab character &.
-\beamer@doifinframe ...h scheme)} \[ \vect {C_1} &
-                                                  = \vect {F} \cdot \vect {A...
-l.442 \end{frame}
-                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-! Misplaced alignment tab character &.
-\beamer@doifinframe ...\vect {A}, \: \vect {c_2} &
-                                                  = \vect {F} \cdot \vect {b...
-l.442 \end{frame}
-                 
-I can't figure out why you would want to use a tab mark
-here. If you just want an ampersand, the remedy is
-simple: Just type `I\&' now. But if some right brace
-up above has ended a previous alignment prematurely,
-you're probably due for more error messages, and you
-might try typing `S' now just to see what is salvageable.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-LaTeX Font Warning: Command \small invalid in math mode on input line 442.
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 442--442
-[][]  
- []
-
-
-Overfull \vbox (4.22029pt too high) detected at line 442
- []
-
-[53
+] [53
 
 ] [54
 
@@ -5890,12 +5701,12 @@ Overfull \vbox (4.22029pt too high) detected at line 442
 
 ] [63
 
-] [64
-
 ]
 \c@finalframe=\count308
  (./commitment.tex
-[65
+[64
+
+] [65
 
 ] [66
 
@@ -5923,8 +5734,6 @@ Overfull \vbox (4.22029pt too high) detected at line 442
 
 ] [78
 
-] [79
-
 ]
 
 ! Class beamer Error: Overprints may not overlap.
@@ -5940,7 +5749,7 @@ command, so I can't give any explicit help.
 Pretend that you're Hercule Poirot: Examine all clues,
 and deduce the truth by order and method.
 
-[80
+[79
 
 ]
 
@@ -5954,17 +5763,258 @@ l.135 \end{frame}
                  
 (That was another \errmessage.)
 
-[81
+[80
 
-] [82
+] [81
 
  </usr/share/texmf-dist/tex/latex/beamer/art/beamericonarticle.pdf>]
 Overfull \vbox (13.10912pt too high) detected at line 200
  []
 
-[83
+[82
 
  <./images/adv.png>]
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.229 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.229 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.229 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.229 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.229 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+<recently read> }
+                 
+l.229 \end{frame}
+                 
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.229 \end{frame}
+                 
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Missing } inserted.
+<inserted text> 
+                }
+l.229 \end{frame}
+                 
+I've inserted something that you may have forgotten.
+(See the <inserted text> above.)
+With luck, this will get me unwedged. But if you
+really didn't forget anything, try typing `2' now; then
+my insertion and my current dilemma will both disappear.
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 229--229
+[][]  
+ []
+
+
+Overfull \hbox (6.45822pt too wide) in paragraph at lines 229--229
+[][]  
+ []
+
+[83
+
+]
 ! Missing $ inserted.
 <inserted text> 
                 $
@@ -7170,10 +7220,20 @@ Overfull \hbox (6.45822pt too wide) in paragraph at lines 229--229
 [88
 
 ]
+
+Package pgf Warning: File "images/proof_3" not found when defining image "3".
+(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
+ine 265.
+
+
+Package pgf Warning: Missing width for image "3" ("images/proof_3") in draft mo
+de.
+(pgf)                Using 1cm instead on input line 265.
+
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.229 \end{frame}
+l.265 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -7181,7 +7241,7 @@ you left one out. Proceed, with fingers crossed.
 ! Extra }, or forgotten $.
 <recently read> }
                  
-l.229 \end{frame}
+l.265 \end{frame}
                  
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -7192,7 +7252,7 @@ deleted material, e.g., by typing `I$}'.
 ! Missing $ inserted.
 <inserted text> 
                 $
-l.229 \end{frame}
+l.265 \end{frame}
                  
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
@@ -7200,197 +7260,7 @@ you left one out. Proceed, with fingers crossed.
 ! Missing } inserted.
 <inserted text> 
                 }
-l.229 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.229 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.229 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.229 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.229 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.229 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.229 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.229 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.229 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.229 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.229 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.229 \end{frame}
+l.265 \end{frame}
                  
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -7399,12 +7269,22 @@ really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 229--229
+Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
+[] 
+ []
+
+
+Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
 [][]  
  []
 
 
-Overfull \hbox (6.45822pt too wide) in paragraph at lines 229--229
+Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
+[] 
+ []
+
+
+Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
 [][]  
  []
 
@@ -7623,77 +7503,6 @@ Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
 
 [92
 
-]
-
-Package pgf Warning: File "images/proof_3" not found when defining image "3".
-(pgf)                Tried all extensions in ".pdf:.jpg:.jpeg:.png:" on input l
-ine 265.
-
-
-Package pgf Warning: Missing width for image "3" ("images/proof_3") in draft mo
-de.
-(pgf)                Using 1cm instead on input line 265.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.265 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Extra }, or forgotten $.
-<recently read> }
-                 
-l.265 \end{frame}
-                 
-I've deleted a group-closing symbol because it seems to be
-spurious, as in `$x}$'. But perhaps the } is legitimate and
-you forgot something else, as in `\hbox{$x}'. In such cases
-the way to recover is to insert both the forgotten and the
-deleted material, e.g., by typing `I$}'.
-
-! Missing $ inserted.
-<inserted text> 
-                $
-l.265 \end{frame}
-                 
-I've inserted a begin-math/end-math symbol since I think
-you left one out. Proceed, with fingers crossed.
-
-! Missing } inserted.
-<inserted text> 
-                }
-l.265 \end{frame}
-                 
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
-[] 
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
-[][]  
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
-[] 
- []
-
-
-Overfull \hbox (9.6996pt too wide) in paragraph at lines 265--265
-[][]  
- []
-
-[93
-
 ]))
 \tf@nav=\write6
 \openout6 = `presentation.nav'.
@@ -7714,9 +7523,9 @@ Package rerunfilecheck Info: File `presentation.out' has not changed.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 180.
  ) 
 Here is how much of TeX's memory you used:
- 26872 strings out of 493488
- 490677 string characters out of 3146892
- 628297 words of memory out of 3000000
+ 26870 strings out of 493488
+ 490658 string characters out of 3146892
+ 628221 words of memory out of 3000000
  29308 multiletter control sequences out of 15000+200000
  140729 words of font info for 94 fonts, out of 3000000 for 9000
  957 hyphenation exceptions out of 8191
@@ -7749,10 +7558,10 @@ r/share/texmf-dist/fonts/type1/public/lm/lmsy9.pfb></usr/share/texmf-dist/fonts
 /type1/public/lm/lmtt10.pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt8.
 pfb></usr/share/texmf-dist/fonts/type1/public/lm/lmtt9.pfb></usr/share/texmf-di
 st/fonts/type1/public/amsfonts/symbols/msbm10.pfb>
-Output written on presentation.pdf (93 pages, 1001378 bytes).
+Output written on presentation.pdf (92 pages, 1000187 bytes).
 PDF statistics:
- 829 PDF objects out of 1000 (max. 8388607)
- 672 compressed objects within 7 object streams
- 193 named destinations out of 1000 (max. 500000)
+ 822 PDF objects out of 1000 (max. 8388607)
+ 666 compressed objects within 7 object streams
+ 191 named destinations out of 1000 (max. 500000)
  138 words of extra memory for PDF output out of 10000 (max. 10000000)
 

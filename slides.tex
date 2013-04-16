@@ -22,7 +22,7 @@
     \begin{enumerate}
      \item<4-> cryptographic assumptions broken by efficient quantum algorithms \\
 	  e.g. \emph{\textbf{factoring} and \textbf{discrete-logarithm} broken by Shor's algorithm}
-     \item<5-> proofs of security (or \emph{reduction}) become unuseful 
+     \item<5-> proofs of security (or \emph{reductions}) become unuseful 
     \end{enumerate}
  \end{itemize}
 \end{block}
@@ -33,7 +33,8 @@
 \frametitle{Post-Quantum cryptography}
 \begin{columns}[c]
 \column{0.7\textwidth}
-Schemes that are believed to resist classical \& quantum computers
+Schemes that are believed to resist \\
+classical \& quantum computers
       \begin{itemize}
       \item \textbf{Code-based cryptography}
       \item \alert<2->{\textbf{Lattice-based cryptography}}
@@ -66,17 +67,22 @@ Schemes that are believed to resist classical \& quantum computers
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
  \begin{overprint}
  \onslide<2>
- \begin{align*}
-  {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\  
+  \begin{align*}
+  {\color{blue}{\vect{a_1}}} & \R \zol \quad   \\
+   & \vdots \\
+   {\color{blue}{\vect{a_q}}} & \R \zol \quad   \\
   \end{align*}
+
+%  \begin{align*}
+%   {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= \langle {\color{blue}{\vect{a_1}}} \: , \: \vect{s} \rangle \: \xor \: e_1 \\  
+%   \end{align*}
 
   \onslide<3>
   \begin{align*}
-  {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= <{\color{blue}{\vect{a_1}}} \: , \: \vect{s}> \: \xor \: e_1 \\
+  {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= \langle {\color{blue}{\vect{a_1}}} \: , \: \vect{s} \rangle \: \xor \: e_1 \\
    & \vdots \\
-   {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= <{\color{blue}{\vect{a_q}}} \: , \: \vect{s}> \: \xor \: e_q \\
+   {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= \langle {\color{blue}{\vect{a_q}}} \: , \: \vect{s} \rangle \: \xor \: e_q \\
   \end{align*}
-
   \onslide<4->
   \vspace*{15pt}
 \[
@@ -87,13 +93,14 @@ Schemes that are believed to resist classical \& quantum computers
            \end{pmatrix}  , {\color{red} \vect{b}} = {\color{blue} \vect{A}} \cdot \vect{s} \xor \vect{e} 
 \]
  \end{overprint}
-  Errors $e_i \gets \Ber_{\tau}$, i.e. $\Pr(e_i=1)= \tau$
-\end{itemize}
+\onslide<3-> Errors $e_i \gets \Ber_{\tau}$, i.e. $\Pr(e_i=1)= \tau$
+
+ \end{itemize}
 \vspace{5pt}
 
 \onslide<5->
   \begin{itemize}
-    \item<5-> \textbf{Decision}: \underline{distinguish} $\left( {\color{blue}\vect{A}}, {\color{red}\vect{b}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{A}}, $ {\color{blue} $\vect{b}$} $)$ 
+    \item<5-> \textbf{Decisional}: \underline{distinguish} $\left( {\color{blue}\vect{A}}, {\color{red}\vect{b}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{A}}, $ {\color{blue} $\vect{b}$} $)$ 
 \vspace{5pt}
     \item<6-> \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\ 
  \end{itemize}
@@ -140,14 +147,14 @@ where $\ell$ is the security parameter
 \section{Threshold Public-Key Encryption}
 
 \begin{frame}
-\frametitle{Threshold Public-Key Encryption schemes}
+\frametitle{Public-Key Encryption schemes}
 
 \begin{center}\pgfuseimage{pke}\end{center}
 
 \begin{block}{Public-key cryptography}  
   \begin{itemize}
-   \item<1-> The ability of decrypting or signing is restricted to the owner of the secret key.
-   \item<2-> $\Rightarrow$ \alert{only one person has all the power} 
+   \item<2-> The ability of decrypting or signing is restricted to the owner of the secret key.
+   \item<3-> $\Rightarrow$ \alert{only one person has all the power} 
   \end{itemize}  
  \end{block}
  \end{frame}
@@ -233,7 +240,7 @@ where $\ell$ is the security parameter
  \item<6-7> \alert<6-7>{ \textbf{Key Assembly} }
  \item<8-11> \alert<8-11>{ \textbf{Encryption} }
  \item<12-17> \alert<12-17>{ \textbf{Partial Decryption} } 
- \item<18-20> \alert<18-20>{ \textbf{Finish Decryption} }
+ \item<18-21> \alert<18-21>{ \textbf{Finish Decryption} }
  \end{itemize} 
     \column{0.50\textwidth}
 \begin{overprint}
@@ -241,7 +248,7 @@ where $\ell$ is the security parameter
  \onslide<6,7> \begin{center}\pgfuseimage{key_assembly}\end{center}
  \onslide<8-11> \begin{center}\pgfuseimage{enc}\end{center}
  \onslide<12-17> \begin{center}\pgfuseimage{part_dec}\end{center}
- \onslide<18-20> \begin{center}\pgfuseimage{finish}\end{center}
+ \onslide<18-21> \begin{center}\pgfuseimage{finish}\end{center}
 \end{overprint}
 
 \end{columns}
@@ -413,10 +420,10 @@ and $I$ is the users subset
  
 
 
- \onslide<19->
+ \onslide<19>
  \begin{block}{Finish decryption}
  \begin{itemize}
-  \item<19-> Each receiver \alert{indipendently} computes the vector 
+  \item<19> Each receiver \alert{indipendently} computes the vector 
  
 %  \onslide<19>
 %  \begin{eqnarray*}
@@ -426,10 +433,30 @@ and $I$ is the users subset
 %  \onslide<20->
  \begin{eqnarray*}
  \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
- 	  = \dots = \: \vect{F}\cdot \vect{e} \xor \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
+%  	  = \dots = \: \vect{F}\cdot \vect{e} \xor \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
  \end{eqnarray*}
  
  \item<20> the bit in $\vect{d}$ that is in majority is separately chosen by each receiver as $m$
+ \end{itemize}
+ \end{block}
+ 
+ \onslide<20->
+ \begin{block}{Finish decryption}
+ \begin{itemize}
+  \item<20-> Each receiver \alert{indipendently} computes the vector 
+ 
+%  \onslide<19>
+%  \begin{eqnarray*}
+%  \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
+%  \end{eqnarray*}
+%  
+%  \onslide<20->
+ \begin{eqnarray*}
+ \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
+ 	  = \dots = \: \vect{F}\cdot \vect{e} \xor \: \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \: \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
+ \end{eqnarray*}
+ 
+ \item<21-> the bit in $\vect{d}$ that is in majority is separately chosen by each receiver as $m$
  \end{itemize}
  \end{block}
  
@@ -504,17 +531,18 @@ and $I$ is the users subset
  \frametitle{Protocol Security Analysis }
 
  \begin{block}{Relaxed Semi-honest model}
-   \begin{itemize}[<+->]
-    \item Semi-honest model not so realistic (\emph{replay attacks} may occur)
-    \item \alert{Problem:} if the same message is encrypted multiple times then it is possible to recover information about the secret key from the ciphertexts\\
+   \begin{itemize}
+    \item<1-> Semi-honest model is not realistic 
+    \item<2-> \emph{replay attacks}: the same message is fraudolently encrypted multiple times
+    \item<3-> \alert{Problem:} it is possible to recover information about the secret key from the ciphertexts\\
    \end{itemize}
   \end{block}
 
- \onslide<3->
+ \onslide<4->
  \begin{block}{Proposed solutions}
     \begin{enumerate}
-     \item<3-> implement the receivers as \alert{stateful} machines (not good in resource-constrained devices)
-     \item<4-> make use of \alert{pseudorandom functions} (i.e. deterministic algorithms that simulate truly random functions, given a ``seed'')
+     \item<5-> implement the receivers as \alert{stateful} machines (not good in resource-constrained devices)
+     \item<6-> make use of \alert{pseudorandom functions} (i.e. deterministic algorithms that simulate truly random functions, given a ``seed'')
     \end{enumerate}
  \end{block}
  
@@ -538,7 +566,7 @@ and $I$ is the users subset
   \begin{itemize}
    \item<2-> relation between standard $\LPN$ and some variants
    \item<3-> Does $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? \\ Is there a threshold?
-   \item<4-> how to get some basic primitives from standard $\LPN$?
+   \item<4-> how to get some basic primitives from $\LPN$?
   \end{itemize}
 
  \end{block}

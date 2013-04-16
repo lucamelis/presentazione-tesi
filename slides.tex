@@ -68,9 +68,9 @@ classical \& quantum computers
  \begin{overprint}
  \onslide<2>
   \begin{align*}
-  {\color{blue}{\vect{a_1}}} & \R \zol \quad   \\
+  {\color{blue}{\vect{a_1}}} \R \zol \quad &, \quad {\color{red}{b_1}}    \\
    & \vdots \\
-   {\color{blue}{\vect{a_q}}} & \R \zol \quad   \\
+   {\color{blue}{\vect{a_q}}} \R \zol \quad &, \quad  {\color{red}{b_q}}    \\
   \end{align*}
 
 %  \begin{align*}
@@ -79,9 +79,9 @@ classical \& quantum computers
 
   \onslide<3>
   \begin{align*}
-  {\color{blue}{\vect{a_1}}} \R \zol \quad , \quad {\color{red}{b_1}} &= \langle {\color{blue}{\vect{a_1}}} \: , \: \vect{s} \rangle \: \xor \: e_1 \\
+  {\color{blue}{\vect{a_1}}} \R \zol \quad &, \quad {\color{red}{b_1}} = \langle {\color{blue}{\vect{a_1}}} \: , \: \vect{s} \rangle \: \xor \: e_1 \\
    & \vdots \\
-   {\color{blue}{\vect{a_q}}} \R \zol \quad, \quad  {\color{red}{b_q}} &= \langle {\color{blue}{\vect{a_q}}} \: , \: \vect{s} \rangle \: \xor \: e_q \\
+   {\color{blue}{\vect{a_q}}} \R \zol \quad &, \quad  {\color{red}{b_q}} = \langle {\color{blue}{\vect{a_q}}} \: , \: \vect{s} \rangle \: \xor \: e_q \\
   \end{align*}
   \onslide<4->
   \vspace*{15pt}
@@ -162,22 +162,33 @@ where $\ell$ is the security parameter
 
  \begin{frame}
  \frametitle{Threshold Public-Key Encryption schemes}
+
+ \begin{overprint}
+\onslide<1> \begin{center} \pgfuseimage{th1} \end{center}
+\onslide<2>  \begin{center} \pgfuseimage{th2} \end{center}
+\onslide<3->  \begin{center} \pgfuseimage{th3} \end{center}
+ \end{overprint}
+
+ \begin{overprint}
+  
+ \onslide<1-3>
  \begin{block}{Solution: Threshold PKE}
- \begin{itemize}[<+->]
-  \item The secret key is split into shares and each share is given to a group of users.
-  \item Users can decrypt or sign only if enough, a \emph{threshold}, cooperate
+ \begin{itemize}
+  \item<2-> The secret key is split into shares and each share is given to a group of parties.
+  \item<3-> Parties can decrypt or sign only if enough, a \emph{threshold}, cooperate
   \end{itemize}  
  \end{block}
  
-\onslide<3-> 
+\onslide<4-> 
  \begin{block}{\textbf{Our contribution}}
  A {\color{red}{Threshold Public-Key Encryption}} scheme which is:
  \begin{itemize}
-   \item<4-> based on $\LPN$
-   \item<5-> secure in the \emph{Semi-honest} model
+   \item<5-> based on $\LPN$
+   \item<6-> secure in the \emph{Semi-honest} model
   \end{itemize}
-
  \end{block}
+ 
+ \end{overprint}
 
 \end{frame}
 

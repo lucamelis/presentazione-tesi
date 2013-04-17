@@ -62,7 +62,7 @@ classical \& quantum computers
 \begin{frame}
 \frametitle{Learning Parity with Noise Problem $\LPN$}
 \begin{itemize}[<+->]
- \item Dimension $\ell$ (security parameter), $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right)$
+ \item Dimension $\ell$ (security parameter), $q$ samples where $q \gg \ell$, $\tau \in \left( 0,\frac{1}{2} \right)$
  \vspace*{5pt}
  \item \textbf{Search}: \underline{find}  $ \vect{s} \in \zol$ given ``noisy random inner products'' \\
  \begin{overprint}
@@ -195,15 +195,27 @@ where $\ell$ is the security parameter
 
 \begin{frame}
 \frametitle{Alekhnovich PKE scheme}
+\begin{overprint} 
+ \onslide<1>
+ \begin{center}  \pgfuseimage{Alekh2} \end{center}
+ \onslide<2>
+ \begin{center}  \pgfuseimage{Alekh1} \end{center}
+ \onslide<3>
+ \begin{center}  \pgfuseimage{Alekh} \end{center}
+\end{overprint}
 
+\begin{overprint} 
+\onslide<1->
 \begin{block}{\textbf{Key Generation}}
  The receiver $\mathtt{R}$ chooses
  \begin{itemize}
-  \item a secret key $\vect{s} \R \zol$
-  \item $\vect{A} \R \Z^{q \times \ell}$ and the error $\vect{e} \gets \Ber_{\tau}^{q}$, where $ \tau \in \Theta(\frac{1}{\sqrt{\ell}}) $ \\
+  \item<2-> a secret key $\vect{s} \R \zol$
+  \item<3-> $\vect{A} \R \Z^{q \times \ell}$ and the error $\vect{e} \gets \Ber_{\tau}^{q}$, where $ \tau \in \Theta(\frac{1}{\sqrt{\ell}}) $ \\
   and computes the \emph{pk} as $\left( \vect{A},\vect{b}= \vect{A}\vect{s} \xor \vect{e} \right)$
  \end{itemize}
 \end{block}
+\end{overprint}
+
 %   \begin{figure}  
 %     \begin{protocol}{2}
 %       \protocolheader{\textbf{Key Generation}}\\
@@ -213,31 +225,54 @@ where $\ell$ is the security parameter
 %       & \quad & \mbox{and an error vector $\vect{e} \gets \Ber_{\tau}^{q}$} \\
 %     \end{protocol}
 %  \end{figure}
+\end{frame}
 
-\onslide<2->
-  \begin{figure}
-  
+\begin{frame}
+  \frametitle{Alekhnovich PKE scheme}
+\begin{overprint}
+ 
+ \onslide<1>
+  \begin{figure}  
     \begin{protocol}{2}
       \protocolheader{\textbf{Encryption} of a message bit $m \in \Z$}\\
       \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
       \mbox{choose a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
-      \mbox{compute $\vect{u}= \vect{f} \cdot \vect{A} $ } & & \\
-      \mbox{ $c= \langle \vect{f},\vect{b} \rangle \xor m$} & \sends{( \vect{u}, c ) } \\
-    \end{protocol}   
-  
+      \mbox{compute $\vect{c_1}= \vect{f} \cdot \vect{A} $ } & & \\
+      \mbox{ $c_2= \langle \vect{f},\vect{b} \rangle \xor m$} & \phantom{\sends{( \vect{c_1}, c_2) }} \\
+    \end{protocol}
+   \end{figure}
+    
+\onslide<2->
+    \begin{figure}  
+    \begin{protocol}{2}
+      \protocolheader{\textbf{Encryption} of a message bit $m \in \Z$}\\
+      \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
+      \mbox{choose a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
+      \mbox{compute $\vect{c_1}= \vect{f} \cdot \vect{A} $ } & & \\
+      \mbox{ $c_2= \langle \vect{f},\vect{b} \rangle \xor m$} & \sends{( \vect{c_1}, c_2 ) } \\
+    \end{protocol}       
  \end{figure}
  
+\end{overprint}
+
 \begin{overprint}
 \onslide<3>
  \begin{block}{\textbf{Decryption}}
- The receiver $\mathtt{R}$ computes $d = c \xor \langle \vect{s},\vect{u} \rangle$ 
+ The receiver $\mathtt{R}$ computes 
+ \[
+d = c_2 \xor \langle \vect{s},\vect{c_1} \rangle
+ \]
+ 
 \end{block}
 
 \onslide<4>
  \begin{block}{\textbf{Decryption}}
- The receiver $\mathtt{R}$ computes $d = c \xor \langle \vect{s},\vect{u} \rangle = 
- \dots = \langle  \vect{f} , \vect{e} \rangle \xor m$ \\ 
-\end{block}
+ The receiver $\mathtt{R}$ computes 
+ \[
+ d = c_2 \xor \langle \vect{s},\vect{c_1} \rangle = \dots = {\color{red}{\langle  \vect{f} , \vect{e} \rangle}} \xor m 
+ \] \\ 
+\alert{noisy decryption}: correct decryption $\Leftrightarrow \langle  \vect{f} , \vect{e} \rangle = 0$
+ \end{block}
 
 \end{overprint}
 
@@ -269,7 +304,7 @@ where $\ell$ is the security parameter
 %  \column{0.5\textwidth}
  
    \begin{overprint}
- \onslide<3-5>
+ \onslide<2-5>
  \begin{block}{Key Generation}
   \begin{itemize}
    \item<3-> All the receivers share a matrix $\vect{A}  \R \Z^{q \times \ell}$
@@ -564,21 +599,29 @@ and $I$ is the users subset
 \begin{frame}
  \frametitle{Conclusions and Open Problems}
  
- \begin{block}{Our contribution}
+ \begin{block}{Summary}
+   \begin{itemize}
+    \item We investigate about the \alert{Learning Parity with Noise} ($\LPN$) problem
+    \item We propose a {\color{blue}{Threshold Public-Key Encryption}} scheme based on $\LPN$
+   \end{itemize}
+ \end{block}
+
+ \onslide<2->
+ \begin{block}{Future Work}
 \begin{itemize}
- \item study the security of our Threshold Public-Key Encryption scheme in the \emph{malicious model}
+ \item Study the security of our Threshold Public-Key Encryption scheme in the \emph{malicious model}
 %  \item find statistically hiding commitments
 %  \item find efficient statistically binding commitments
 \end{itemize}
   
  \end{block}
  
-\onslide<2->
+\onslide<3->
  \begin{block}{$\LPN$ open problems}
   \begin{itemize}
-   \item<2-> relation between standard $\LPN$ and some variants
-   \item<3-> Does $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? \\ Is there a threshold?
-   \item<4-> how to get some basic primitives from $\LPN$?
+   \item<4-> Relation between standard $\LPN$ and some variants
+   \item<5-> Does $\LPN$ with noise rate $\tau$ imply anything about $\LPN$ with $\tau' < \tau$? \\ Is there a threshold?
+   \item<6-> How to get some basic primitives from $\LPN$?
   \end{itemize}
 
  \end{block}

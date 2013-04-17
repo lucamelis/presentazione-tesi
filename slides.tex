@@ -21,7 +21,7 @@
     \item Cryptography world may fall apart:
     \begin{enumerate}
      \item<4-> cryptographic assumptions broken by efficient quantum algorithms \\
-	  e.g. \emph{\textbf{factoring} and \textbf{discrete-logarithm} broken by Shor's algorithm}
+	  e.g. \emph{\textbf{factoring} problem broken by Shor's algorithm (\textbf{RSA} is defeated)}
      \item<5-> proofs of security (or \emph{reductions}) become unuseful 
     \end{enumerate}
  \end{itemize}
@@ -103,7 +103,7 @@ classical \& quantum computers
     \item<5-> \textbf{Decisional}: \underline{distinguish} $\left( {\color{blue}\vect{A}}, {\color{red}\vect{b}} \right)$ from {\color{blue}{uniform}} $( {\color{blue}\vect{A}}, $ {\color{blue} $\vect{b}$} $)$ 
 \vspace{5pt}
     \item<6-> \emph{decisional} and \emph{search} $\LPN$ are \emph{``polinomially equivalent''} \\
-    i.e. a \emph{decisional} attacker of size $t$ $\Rightarrow$ a \emph{search} attacker of size $poly(t)$ 
+     i.e.  there are no faster algorithms for decision than for search
  \end{itemize}
 \end{frame}
 
@@ -236,19 +236,30 @@ where $\ell$ is the security parameter
     \begin{protocol}{2}
       \protocolheader{\textbf{Encryption} of a message bit $m \in \Z$}\\
       \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
-      \mbox{choose a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
-      \mbox{compute $\vect{c_1}= \vect{f} \cdot \vect{A} $ } & & \\
+      \mbox{chooses a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
+      \phantom{\mbox{computes $\vect{c_1}= \vect{f} \cdot \vect{A} $ }} & & \\
+      \phantom{\mbox{ $c_2= \langle \vect{f},\vect{b} \rangle \xor m$}} & \phantom{\sends{( \vect{c_1}, c_2) }} \\
+    \end{protocol}
+   \end{figure}
+ 
+ \onslide<2>
+  \begin{figure}  
+    \begin{protocol}{2}
+      \protocolheader{\textbf{Encryption} of a message bit $m \in \Z$}\\
+      \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
+      \mbox{chooses a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
+      \mbox{computes $\vect{c_1}= \vect{f} \cdot \vect{A} $ } & & \\
       \mbox{ $c_2= \langle \vect{f},\vect{b} \rangle \xor m$} & \phantom{\sends{( \vect{c_1}, c_2) }} \\
     \end{protocol}
    \end{figure}
     
-\onslide<2->
+\onslide<3->
     \begin{figure}  
     \begin{protocol}{2}
       \protocolheader{\textbf{Encryption} of a message bit $m \in \Z$}\\
       \participants{Sender \underline{$\mathtt{S}$}}{Receiver \underline{$\mathtt{R}$}}\\
-      \mbox{choose a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
-      \mbox{compute $\vect{c_1}= \vect{f} \cdot \vect{A} $ } & & \\
+      \mbox{chooses a vector $\vect{f} \gets \Ber_{\tau}^{q}$} & &  \\
+      \mbox{computes $\vect{c_1}= \vect{f} \cdot \vect{A} $ } & & \\
       \mbox{ $c_2= \langle \vect{f},\vect{b} \rangle \xor m$} & \sends{( \vect{c_1}, c_2 ) } \\
     \end{protocol}       
  \end{figure}
@@ -256,7 +267,7 @@ where $\ell$ is the security parameter
 \end{overprint}
 
 \begin{overprint}
-\onslide<3>
+\onslide<4>
  \begin{block}{\textbf{Decryption}}
  The receiver $\mathtt{R}$ computes 
  \[
@@ -265,7 +276,7 @@ d = c_2 \xor \langle \vect{s},\vect{c_1} \rangle
  
 \end{block}
 
-\onslide<4>
+\onslide<5>
  \begin{block}{\textbf{Decryption}}
  The receiver $\mathtt{R}$ computes 
  \[

@@ -176,7 +176,7 @@ where $\ell$ is the security parameter
  \begin{block}{Solution: Threshold PKE}
  \begin{itemize}
   \item<2-> The secret key is split into shares and each share is given to a group of parties.
-  \item<3-> Parties can decrypt or sign only if enough, a \alert{threshold}, cooperate
+  \item<3-> Parties can decrypt only if enough, a \alert{threshold}, cooperate
   \end{itemize}  
  \end{block}
  
@@ -511,7 +511,7 @@ and $I$ is the users subset
 %  \onslide<20->
  \begin{eqnarray*}
  \vect{d} =  \vect{c_2} \bigoplus_{i \in I} \left( \vect{d_i} \right)  
- 	  = \dots = \: \vect{F}\cdot \vect{e} \xor \: \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \: \bigoplus_{i \in I} \left( \vect{\nu_i} \right) .
+ 	  = \dots = \: {\color{red}{\vect{F}\cdot \vect{e}}} \xor \: \underbrace{\begin{bmatrix} 1 \\ \vdots \\ 1 \end{bmatrix}}_{q} \cdot m \: \bigoplus_{i \in I} \left( {\color{red}{\vect{\nu_i}}} \right) .
  \end{eqnarray*}
  
  \item<21-> the bit in $\vect{d}$ that is in majority is separately chosen by each receiver as $m$
